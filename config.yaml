@@ -1,0 +1,150 @@
+details:
+  name: Data Structures and Algorithms
+  repository_name: unit-dsa
+
+sequence:
+  Algorithm Fundamentals:
+    - name: Unit 1 Launch
+      elements:
+        - kind: deck
+        - kind: recording
+    - name: Introduction to Algorithms
+      pursuit_path: intro-to-algorithms
+      kind: lesson
+      activity: canvas_text
+      activity_description: "To complete this lab, you will need to write an algorithm in plain language. You will not need to write any code to complete this Lab.
+
+      Write an algorithm that achieves the following outcome: looking up a word in an online or physical dictionary. Keep in mind any inputs a person may need and the desired output. Additionally, focus on designing for the default scenario (i.e. 'happy path') before thinking about edge cases. If there are any edge cases you think are important to keep in mind, include them at the end.
+
+      Do not spend more than 30 - 45 minutes on this Lab."
+    - name: Computer Setup and Installation
+      elements:
+        - kind: guide
+          pursuit_path: computer-setup
+        - kind: recording
+    - name: Introduction to JavaScript
+      pursuit_path: intro-to-javascript
+      kind: lesson
+      activity: replit
+    - name: Control Flow
+      pursuit_path: control-flow
+      kind: lesson
+      activity: replit
+    - name: Functions
+      pursuit_path: functions
+      kind: lesson
+      activity: replit
+    - name: Understanding Code Challenges
+      pursuit_path: understanding-code-challenges
+      kind: lesson
+      activity: replit
+    - name: Scope
+      pursuit_path: scope
+      kind: lesson
+      activity: replit
+    - name: Arrays
+      pursuit_path: arrays
+      kind: lesson
+      activity: replit
+    - name: Common Methods and Tools
+      pursuit_path: common-methods-and-tools
+      kind: lesson
+      activity: replit
+    - name: Objects
+      pursuit_path: objects
+      kind: lesson
+      activity: replit
+    - name: Evaluating Expressions
+      pursuit_path: evaluating-expressions
+      kind: lesson
+      activity: replit
+    - name: Data Representation with Code
+      pursuit_path: data-representation-with-code
+      kind: lesson
+      activity: replit
+    - name: Common Errors
+      pursuit_path: common-errors
+      kind: lesson
+      activity: replit
+    - name: Loops
+      pursuit_path: loops
+      kind: lesson
+      activity: replit
+    - name: Problem Solving Methodologies
+      pursuit_path: problem-solving-methodologies
+      kind: lesson
+      activity: replit
+    - name: Early JavaScript
+      pursuit_path: early-javascript-assessment
+      kind: assessment
+      activity: replit
+      points_possible: 7
+  Data Structures & Algorithms:
+    - name: Collaborative Programming
+      pursuit_path: collaborative-programming
+      kind: lesson
+      activity: replit
+    - name: Introduction to the Command Line
+      pursuit_path: intro-to-command-line
+      kind: lesson
+      activity: repository
+    - name: Git
+      pursuit_path: git
+      kind: lesson
+      activity: repository
+    - name: GitHub
+      pursuit_path: github
+      kind: lesson
+      activity: repository
+    - name: Markdown
+      pursuit_path: markdown
+      kind: lesson
+      activity: repository
+    - name: JavaScript on Your Machine
+      pursuit_path: javascript-on-your-machine
+      kind: lesson
+      activity: repository
+    - name: Reference Types
+      pursuit_path: reference-types
+      kind: lesson
+      activity: repository
+    - name: Skill Sharpening
+      pursuit_path: skill-sharpening
+      kind: project
+      activity: repository
+      points_possible: 186
+  Passing the Gate:
+    - name: Code Wars
+      pursuit_path: code-wars
+      kind: lesson
+      activity: canvas_text
+      canvas_description: "<a href='https://pursuit.codetrack.dev'>Pursuit Code Wars Tracker</a>"
+      points: 150
+    - name: Peer Mock Interviews
+      pursuit_path: peer-mock-interviews
+      kind: lesson
+      activity: repository
+    - name: Mock Interview 1
+      pursuit_path: mock-interview-1
+      kind: lesson ???????
+      activity: canvas_text
+      canvas_description: ""
+    - name: Mock Interview 2
+      pursuit_path: mock-interview-2
+      kind: lesson ???????
+      activity: canvas_text
+      canvas_description: ""
+    - name: Mock Interview 3
+      pursuit_path: mock-interview-3
+      kind: lesson ???????
+      activity: canvas_text
+      canvas_description: ""
+    - name: End of Module
+      pursuit_path: final-fundamentals
+      kind: assessment
+      activity: repository
+      points_possible: 31
+    - name: End of Module Reflection
+      elements:
+        - kind: deck
+        - kind: recording
