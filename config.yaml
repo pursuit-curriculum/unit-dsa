@@ -42,6 +42,10 @@ sequence:
     # Also:
     # Needs a Canvas assignment for this resource
     # resource-mock-interview-trivia-questions
+    - name: Mock Interview Trivia Questions
+      pursuit_path: mock-interview-trivia-questions
+      kind: resource
+      activity: repository
     # This resource is for instructors and students
     - name: Peer Mock Interviews
       pursuit_path: peer-mock-interviews
@@ -112,7 +116,7 @@ sequence:
     - name: Introduction to Hash Tables
       pursuit_path: intro-to-hash-tables
       kind: lesson
-      activity: repository
+      activity: ~
   Passing the Gate:
     - name: Code Wars
       pursuit_path: code-wars
