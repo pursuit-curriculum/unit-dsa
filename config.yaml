@@ -4,7 +4,7 @@ details:
 
 sequence:
   Algorithm Fundamentals:
-    - name: Unit 1 Launch
+    - name: Unit 5 Launch
       elements:
         - kind: deck
         - kind: recording
@@ -118,7 +118,9 @@ sequence:
       pursuit_path: code-wars
       kind: lesson
       activity: canvas_text
-      canvas_description: "<a href='https://pursuit.codetrack.dev'>Pursuit Code Wars Tracker</a>"
+      canvas_description: "<a href='https://pursuit.codetrack.dev'>
+        Pursuit Code Wars Tracker
+        </a>"
       points: 150
     ########### NEEDS ATTENTION ############
     # Alternate structure
