@@ -14,7 +14,7 @@ sequence:
       activity: canvas_text
       activity_description: "Watch:
 
-        <a href="https://www.youtube.com/watch?v=kiFfp-HAu64">The Secret Rules of Modern Living Algorithms </a>
+        <a href='https://www.youtube.com/watch?v=kiFfp-HAu64'>The Secret Rules of Modern Living Algorithms </a>
 
         <h5>And answer the following questions on Canvas:</h5>
         <ol>
