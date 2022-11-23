@@ -8,111 +8,111 @@ sequence:
       elements:
         - kind: deck
         - kind: recording
-    - name: Introduction to Algorithms
+    - name: Introduction to Data Structures and Algorithms
       pursuit_path: intro-to-algorithms
       kind: lesson
       activity: canvas_text
-      activity_description: "To complete this lab, you will need to write an algorithm in plain language. You will not need to write any code to complete this Lab.
+      activity_description: "Watch:
 
-      Write an algorithm that achieves the following outcome: looking up a word in an online or physical dictionary. Keep in mind any inputs a person may need and the desired output. Additionally, focus on designing for the default scenario (i.e. 'happy path') before thinking about edge cases. If there are any edge cases you think are important to keep in mind, include them at the end.
+        <a href="https://www.youtube.com/watch?v=kiFfp-HAu64">The Secret Rules of Modern Living Algorithms </a>
 
-      Do not spend more than 30 - 45 minutes on this Lab."
-    - name: Computer Setup and Installation
-      elements:
-        - kind: guide
-          pursuit_path: computer-setup
-        - kind: recording
-    - name: Introduction to JavaScript
-      pursuit_path: intro-to-javascript
+        <h5>And answer the following questions on Canvas:</h5>
+        <ol>
+          <li> Describe the algorithm to win the chocolate, and not the chili</li>
+          <li> Name 2 types of sorting algorithms discussed in the video</li>
+          <li> Name the algorithm used to help find matches for people who needed a kidney?</li>
+          <li> What animal deals with the Traveling Salesman problem in its daily life?</li>
+        <ol>"
+    ########### NEEDS ATTENTION ############
+    # This is for instructors
+    # There should be three of these?
+    # Or some way that students must do two or three to pass the gate
+    # Labeled as assessment to keep this repo private - only for instructor eyes
+    - name: Mock Interviews
+      pursuit_path: mock-interviews
+      kind: assessment
+      activity: repository
+    #######################################
+    ########### NEEDS ATTENTION ############
+    # Needs to be assigned/given access but no points/nothing to collect
+    # Links out to peer assessment - this is only labeled as assessment
+    # So that my automation tool keeps these repos private
+    # So instructors can add half and half students
+    # For more authentic interview experience
+    # Also:
+    # Needs a Canvas assignment for this resource
+    # resource-mock-interview-trivia-questions
+    # This resource is for instructors and students
+    - name: Peer Mock Interviews
+      pursuit_path: peer-mock-interviews
       kind: lesson
-      activity: replit
-    - name: Control Flow
+      activity: repository
+    #######################################
+    - name: Control Flow Review
       pursuit_path: control-flow
       kind: lesson
-      activity: replit
-    - name: Functions
-      pursuit_path: functions
+      activity: ~ # Codewars time
+    - name: Math for Developers
+      pursuit_path: math-for-devs
       kind: lesson
-      activity: replit
-    - name: Understanding Code Challenges
-      pursuit_path: understanding-code-challenges
+      activity: ~ # Codewars time
+    - name: Strings Review
+      pursuit_path: strings
       kind: lesson
-      activity: replit
-    - name: Scope
-      pursuit_path: scope
+      activity: ~ # Codewars time
+    - name: Dealing with Errors
+      pursuit_path: dealing-w-errors
       kind: lesson
-      activity: replit
-    - name: Arrays
-      pursuit_path: arrays
+      activity: ~ # Codewars time
+    - name: Arrays and Callbacks Review Lab
+      pursuit_path: arrays-and-callbacks
       kind: lesson
-      activity: replit
-    - name: Common Methods and Tools
-      pursuit_path: common-methods-and-tools
-      kind: lesson
-      activity: replit
-    - name: Objects
+      activity: repository
+    - name: Objects Review
       pursuit_path: objects
       kind: lesson
-      activity: replit
-    - name: Evaluating Expressions
-      pursuit_path: evaluating-expressions
+      activity: ~ # Codewars time
+    - name: Introduction to Big-O
+      pursuit_path: intro-to-big-o
       kind: lesson
-      activity: replit
-    - name: Data Representation with Code
-      pursuit_path: data-representation-with-code
+      activity: ~ # Codewars time
+    - name: Introduction to Recursion
+      pursuit_path: intro-to-recursion
       kind: lesson
-      activity: replit
-    - name: Common Errors
-      pursuit_path: common-errors
+      activity: ~ # Codewars time
+    - name: Introduction to Object Oriented Programming
+      pursuit_path: intro-to-oop
       kind: lesson
-      activity: replit
-    - name: Loops
-      pursuit_path: loops
+      activity: ~ # Codewars time
+    - name: Introduction to OOP - Inheritance
+      pursuit_path: intro-to-oop-inheritance
       kind: lesson
-      activity: replit
-    - name: Problem Solving Methodologies
-      pursuit_path: problem-solving-methodologies
-      kind: lesson
-      activity: replit
-    - name: Early JavaScript
-      pursuit_path: early-javascript-assessment
-      kind: assessment
-      activity: replit
-      points_possible: 7
+      activity: repository
   Data Structures & Algorithms:
-    - name: Collaborative Programming
-      pursuit_path: collaborative-programming
-      kind: lesson
-      activity: replit
-    - name: Introduction to the Command Line
-      pursuit_path: intro-to-command-line
+   - name: Introduction to Linked Lists
+      pursuit_path: intro-to-linked-lists
       kind: lesson
       activity: repository
-    - name: Git
-      pursuit_path: git
+    - name: Introduction to Stacks and Queues
+      pursuit_path: intro-to-stacks-and-queues
       kind: lesson
       activity: repository
-    - name: GitHub
-      pursuit_path: github
+    - name: Introduction to Trees
+      pursuit_path: intro-to-trees
       kind: lesson
       activity: repository
-    - name: Markdown
-      pursuit_path: markdown
+    - name: Sorting Algorithms - Bubble Sort
+      pursuit_path: sorting-algorithms-bubble
+      kind: lesson
+      activity: ~ # Codewars time
+    - name: Sorting Algorithms - Merge Sort
+      pursuit_path: sorting-algorithms-merge
       kind: lesson
       activity: repository
-    - name: JavaScript on Your Machine
-      pursuit_path: javascript-on-your-machine
+    - name: Introduction to Hash Tables
+      pursuit_path: intro-to-hash-tables
       kind: lesson
       activity: repository
-    - name: Reference Types
-      pursuit_path: reference-types
-      kind: lesson
-      activity: repository
-    - name: Skill Sharpening
-      pursuit_path: skill-sharpening
-      kind: project
-      activity: repository
-      points_possible: 186
   Passing the Gate:
     - name: Code Wars
       pursuit_path: code-wars
@@ -120,30 +120,29 @@ sequence:
       activity: canvas_text
       canvas_description: "<a href='https://pursuit.codetrack.dev'>Pursuit Code Wars Tracker</a>"
       points: 150
-    - name: Peer Mock Interviews
-      pursuit_path: peer-mock-interviews
-      kind: lesson
-      activity: repository
-    - name: Mock Interview 1
-      pursuit_path: mock-interview-1
-      kind: lesson ???????
-      activity: canvas_text
-      canvas_description: ""
-    - name: Mock Interview 2
-      pursuit_path: mock-interview-2
-      kind: lesson ???????
-      activity: canvas_text
-      canvas_description: ""
-    - name: Mock Interview 3
-      pursuit_path: mock-interview-3
-      kind: lesson ???????
-      activity: canvas_text
-      canvas_description: ""
-    - name: End of Module
-      pursuit_path: final-fundamentals
-      kind: assessment
-      activity: repository
-      points_possible: 31
+    ########### NEEDS ATTENTION ############
+    # Alternate structure
+    #
+    # - name: Peer Mock Interviews
+    #   pursuit_path: peer-mock-interviews
+    #   kind: lesson
+    #   activity: repository
+    # - name: Mock Interview 1
+    #   pursuit_path: mock-interview-1
+    #   kind: lesson ???????
+    #   activity: canvas_text
+    #   canvas_description: ""
+    # - name: Mock Interview 2
+    #   pursuit_path: mock-interview-2
+    #   kind: lesson ???????
+    #   activity: canvas_text
+    #   canvas_description: ""
+    # - name: Mock Interview 3
+    #   pursuit_path: mock-interview-3
+    #   kind: lesson ???????
+    #   activity: canvas_text
+    #   canvas_description: ""
+    #######################################
     - name: End of Module Reflection
       elements:
         - kind: deck
