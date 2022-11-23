@@ -18,10 +18,10 @@ sequence:
 
         <h5>And answer the following questions on Canvas:</h5>
         <ol>
-          <li> Describe the algorithm to win the chocolate, and not the chili</li>
-          <li> Name 2 types of sorting algorithms discussed in the video</li>
-          <li> Name the algorithm used to help find matches for people who needed a kidney?</li>
-          <li> What animal deals with the Traveling Salesman problem in its daily life?</li>
+        <li> Describe the algorithm to win the chocolate, and not the chili</li>
+        <li> Name 2 types of sorting algorithms discussed in the video</li>
+        <li> Name the algorithm used to help find matches for people who needed a kidney?</li>
+        <li> What animal deals with the Traveling Salesman problem in its daily life?</li>
         <ol>"
     ########### NEEDS ATTENTION ############
     # This is for instructors
@@ -89,7 +89,7 @@ sequence:
       kind: lesson
       activity: repository
   Data Structures & Algorithms:
-   - name: Introduction to Linked Lists
+    - name: Introduction to Linked Lists
       pursuit_path: intro-to-linked-lists
       kind: lesson
       activity: repository
