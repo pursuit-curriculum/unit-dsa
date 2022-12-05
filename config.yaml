@@ -11,6 +11,7 @@ sequence:
     - name: Introduction to Data Structures and Algorithms
       pursuit_path: intro-to-algorithms
       kind: lesson
+      # did not work correctly opens in a new window wants to link to a repository
       activity: canvas_text
       activity_description: "Watch:
         <a href='https://www.youtube.com/watch?v=kiFfp-HAu64'>The Secret Rules of Modern Living Algorithms </a>
@@ -117,7 +118,9 @@ sequence:
     - name: Peer Mock Interviews
       pursuit_path: peer-mock-interviews
       kind: task
-      activity: repository
+      activity: canvas_url
+      activity_description: "<p>Practice with your peers.</p>"
+      points_possible: 0
     - name: End of Module Reflection
       elements:
         - kind: deck
