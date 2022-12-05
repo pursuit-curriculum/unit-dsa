@@ -13,9 +13,7 @@ sequence:
       kind: lesson
       activity: canvas_text
       activity_description: "Watch:
-
         <a href='https://www.youtube.com/watch?v=kiFfp-HAu64'>The Secret Rules of Modern Living Algorithms </a>
-
         <h5>And answer the following questions on Canvas:</h5>
         <ol>
         <li> Describe the algorithm to win the chocolate, and not the chili</li>
@@ -23,35 +21,6 @@ sequence:
         <li> Name the algorithm used to help find matches for people who needed a kidney?</li>
         <li> What animal deals with the Traveling Salesman problem in its daily life?</li>
         <ol>"
-    ########### NEEDS ATTENTION ############
-    # This is for instructors
-    # There should be three of these?
-    # Or some way that students must do two or three to pass the gate
-    # Labeled as assessment to keep this repo private - only for instructor eyes
-    - name: Mock Interviews
-      pursuit_path: mock-interviews
-      kind: assessment
-      activity: repository
-    #######################################
-    ########### NEEDS ATTENTION ############
-    # Needs to be assigned/given access but no points/nothing to collect
-    # Links out to peer assessment - this is only labeled as assessment
-    # So that my automation tool keeps these repos private
-    # So instructors can add half and half students
-    # For more authentic interview experience
-    # Also:
-    # Needs a Canvas assignment for this resource
-    # resource-mock-interview-trivia-questions
-    - name: Mock Interview Trivia Questions
-      pursuit_path: mock-interview-trivia-questions
-      kind: resource
-      activity: repository
-    # This resource is for instructors and students
-    - name: Peer Mock Interviews
-      pursuit_path: peer-mock-interviews
-      kind: lesson
-      activity: repository
-    #######################################
     - name: Control Flow Review
       pursuit_path: control-flow
       kind: lesson
@@ -117,38 +86,38 @@ sequence:
       pursuit_path: intro-to-hash-tables
       kind: lesson
       activity: ~
-  Passing the Gate:
+  Projects and Assessments:
     - name: Code Wars
       pursuit_path: code-wars
-      kind: lesson
+      kind: project
       activity: canvas_text
-      canvas_description: "<a href='https://pursuit.codetrack.dev'>
+      canvas_description:
+        "You must gain an additional 150 points from your current score at the start of this unit.
+        <a href='https://pursuit.codetrack.dev'>
         Pursuit Code Wars Tracker
         </a>"
       points: 150
-    ########### NEEDS ATTENTION ############
-    # Alternate structure
-    #
-    # - name: Peer Mock Interviews
-    #   pursuit_path: peer-mock-interviews
-    #   kind: lesson
-    #   activity: repository
-    # - name: Mock Interview 1
-    #   pursuit_path: mock-interview-1
-    #   kind: lesson ???????
-    #   activity: canvas_text
-    #   canvas_description: ""
-    # - name: Mock Interview 2
-    #   pursuit_path: mock-interview-2
-    #   kind: lesson ???????
-    #   activity: canvas_text
-    #   canvas_description: ""
-    # - name: Mock Interview 3
-    #   pursuit_path: mock-interview-3
-    #   kind: lesson ???????
-    #   activity: canvas_text
-    #   canvas_description: ""
-    #######################################
+    - name: Mock Interview 1
+      pursuit_path: mock-interviews
+      kind: assessment
+      activity: repository
+    - name: Mock Interview 2
+      pursuit_path: mock-interviews
+      kind: assessment
+      activity: repository
+    - name: Mock Interview 3
+      pursuit_path: mock-interviews
+      kind: assessment
+      activity: repository
+    # This resource is for instructors and students
+    - name: Mock Interview Trivia Questions
+      pursuit_path: mock-interview-trivia-questions
+      kind: lesson
+      activity: repository
+    - name: Peer Mock Interviews
+      pursuit_path: peer-mock-interviews
+      kind: task
+      activity: repository
     - name: End of Module Reflection
       elements:
         - kind: deck
