@@ -112,15 +112,20 @@ sequence:
       activity: repository
     # This resource is for instructors and students
     - name: Mock Interview Trivia Questions
-      pursuit_path: mock-interview-trivia-questions
-      kind: lesson
-      activity: repository
+      elements:
+        - kind: guide
+        - pursuit_path: guide-mock-interviews
+        - pursuit_subpath: trivia-questions
     - name: Peer Mock Interviews
-      pursuit_path: peer-mock-interviews
-      kind: task
-      activity: canvas_url
-      activity_description: "<p>Practice with your peers.</p>"
-      points_possible: 0
+      elements:
+        - kind: guide
+        - pursuit_path: guide-mock-interviews
+        - pursuit_subpath: peer-mock-interviews
+      - name: Discussion Questions for Mock Interviews
+      elements:
+        - kind: guide
+        - pursuit_path: guide-mock-interviews
+        - pursuit_subpath: discussion-questions
     - name: End of Module Reflection
       elements:
         - kind: deck
