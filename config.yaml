@@ -121,7 +121,7 @@ sequence:
         - kind: guide
         - pursuit_path: guide-mock-interviews
         - pursuit_subpath: peer-mock-interviews
-      - name: Discussion Questions for Mock Interviews
+    - name: Discussion Questions for Mock Interviews
       elements:
         - kind: guide
         - pursuit_path: guide-mock-interviews
