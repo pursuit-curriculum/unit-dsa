@@ -97,7 +97,7 @@ sequence:
         <a href='https://pursuit.codetrack.dev'>
         Pursuit Code Wars Tracker
         </a>"
-      points: 150
+      points_possible: 150
     - name: Mock Interview 1
       pursuit_path: mock-interviews
       kind: assessment
