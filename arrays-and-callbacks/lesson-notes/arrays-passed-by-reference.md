@@ -13,9 +13,9 @@ console.log("reverse seasons", reverseSeasons);
 console.log("seasons", seasons);
 ```
 
-We notice that when we have reversed the seasons, even though we tried to store them in a variable, it changed the original `seasons` array.
+When we reversed the seasons, even though we tried to store them in a variable, it changed the original `seasons` array.
 
-This is because we did not make a new copy of the array, instead we created a new variable that `points` to the original array. Therefore, when we change one array, we change the other, because they are the same array in memory, but now there are two different ways to access this array
+It turns out we did not make a new copy of the array. Instead, we created a new variable that `points` to the original array. Therefore, when we change one array, we change the other because they are actually the same array in memory, only now there are two different ways to access this array.
 
 ### Copying an Array
 

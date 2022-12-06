@@ -41,7 +41,7 @@ Why is the last item `undefined`?
 
 Let's look at some code and figure out how long it takes.
 
-Every computer has a different speed and there are many conditions that can affect how fast some code runs (how many other programs are running? etc.)
+Every computer has a different speed, and many conditions can affect how fast some code runs (how many other programs are running? etc.)
 
 Instead of using time to measure how long something takes, we are going to measure by the number of steps it takes to run the code.
 
@@ -53,7 +53,7 @@ const getLastItem = (arr) => {
 };
 ```
 
-The code inside this function runs one time. It doesn't matter if the array has 1 item, 10 items, 100 items or 1 million items. We can represent items by the letter `n`. The code inside the function runs the same number of operations regardless of the size of the input array.
+The code inside this function runs one time. It doesn't matter if the array has 1 item, 10 items, 100 items, or 1 million items. We can represent items by the letter `n`. The code inside the function runs the same number of operations regardless of the input array size.
 
 The time it takes to run this function is `constant`. It does not change based on the input of the array.
 
@@ -67,7 +67,7 @@ const printItems = (arr) => {
 };
 ```
 
-This runs `n^1` times. If `n` is 1 it loops 1 time. If `n` is 1000, it will loop 1000 times. This shows linear growth.
+The steps in this code run `n^1` times; If `n` is 1, it loops 1 time. If `n` is 1000, it will loop 1000 times. This function demonstrates linear growth.
 
 Try to identify how many times `n` - each of the following code examples would run:
 
@@ -83,19 +83,19 @@ const getMiddleItem = (arr) => {
 
 ```js
 const printEvenNums = (limit) => {
-  const evens = [];
-  for (let i = 0; i <= limit; i++) {
-    if (i % 2 === 0)) {
-      evens.push(i);
-    }
-  }
-  return evens;
+ const evens = [];
+ for (let i = 0; i <= limit; i++) {
+ if (i % 2 === 0)) {
+ evens.push(i);
+ }
+ }
+ return evens;
 };
 ```
 
 #### 3
 
-For a 2d array where the length of the inner and outer array are always the same
+For a 2d array where the length of the inner and outer array is always the same
 
 ```js
 const loopTheLoop = (twoDArray) => {
@@ -109,19 +109,19 @@ const loopTheLoop = (twoDArray) => {
 
 #### 4
 
-Create an `index.html` file and open it in your browser or copy/paste the JavaScript code in chrome
+Create an `index.html` file and open it in your browser or copy/paste the JavaScript code into Chrome
 
-```html
+```HTML
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Game</title>
-    <script src="app.js"></script>
-  </head>
-  <body>
-    <p>refresh the page to play again</p>
-  </body>
+ <head>
+ <meta charset="UTF-8" />
+ <title>Game</title>
+ <script src="app.js"></script>
+ </head>
+ <body>
+ <p>refresh the page to play again</p>
+ </body>
 </html>
 ```
 
@@ -147,17 +147,17 @@ const game = () => {
 game();
 ```
 
-Play this game a few times. What is your method for finding correct number?
+Play this game a few times. What is your method for finding the correct number?
 
-Try to write it down in psuedo code.
+Try to write it down in pseudo-code.
 
 Now try to build an answer.
 
-Here is a naive coding solution. But it is always going to be the worst case scenario - the last guess will always be the correct one. That means if this guessing game were between 1 and 100 million it would take a while...
+Here is a naive coding solution. But it will always be the worst-case scenario - the last guess will always be the correct one. That means it would take a while if this guessing game were between 1 and 100 million.
 
-**Note:** - `alert`,`prompt`, and `confirm` are all browser specific functions that will NOT work in `node`. They also `STOP` the code from running until the user does something. This means that the order of events can be a bit unexpected, don't worry about fixing it. This is for demonstration purposes only.
+**Note:** - `alert`, `prompt`, and `confirm` are all browser-specific functions that will NOT work in `node`. They also `STOP` the code from running until the user does something. This means that the order of events can be a bit unexpected, don't worry about fixing it. This is for demonstration purposes only.
 
-Now that the computer is guessing and we don't need user input, we'll just use `console.log` instead
+Now that the computer is guessing and we don't need user input, we'll use `console.log` instead.
 
 ```js
 const game = () => {
@@ -190,7 +190,7 @@ game();
 
 How close is this solution to the one you used when trying it yourself? If it matched what you tried, can you think of another way?
 
-If it isn't how you approached it, try to code your approach
+Try to code your approach if it isn't how you approached it.
 
 ## Lab:
 
@@ -198,8 +198,8 @@ If it isn't how you approached it, try to code your approach
 
 Go to Canvas for the assignment.
 
-After you've completed and submitted the lab, you can continue onto the next step:
+After you've completed and submitted the lab, you can continue on the next step:
 
 ### Accumulate Points on Codewars
 
-Continue to solve assigned problems. 
+Continue to solve assigned problems.

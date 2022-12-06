@@ -5,17 +5,17 @@
 
 ## Objects Keys and Properties
 
-An object is a collection of keys and values. It is represented with `{}`. In some other coding languages objects can be referred to as `dictionaries`.
+An object is a collection of keys and values. It is represented with `{}`. Objects can be referred to as `dictionaries` in some other coding languages.
 
-The values can be strings, numbers, booleans, arrays, functions or other objects.
+The values can be strings, numbers, booleans, arrays, functions, or other objects.
 
-Let's build a computer
+Let's build a computer.
 
 ```js
 const computer = {};
 ```
 
-Let's add some properties
+Let's add some properties.
 
 ```js
 const computer = {
@@ -40,7 +40,7 @@ console.log(computer.brand);
 console.log(computer["brand"]);
 ```
 
-The second way, allows us to pass in a variable
+The second way allows us to pass in a variable.
 
 ```js
 const someKey = "weight";
@@ -48,7 +48,7 @@ const someKey = "weight";
 console.log(computer[someKey]);
 ```
 
-This will allow us to iterate over an object with the `for in` loop
+This will allow us to iterate over an object with the `for in` loop.
 
 Here we can see the keys:
 
@@ -66,7 +66,7 @@ for (let key in computer) {
 }
 ```
 
-We can also see a list of keys with the `Object.getOwnPropertyNames()` function
+We can also see a list of keys with the `Object.getOwnPropertyNames()` function.
 
 ```js
 const computerKeys = Object.getOwnPropertyNames(computer);
@@ -75,7 +75,7 @@ console.log(computerKeys);
 //[ 'brand', 'weight', 'working', 'trackpad', 'condition', 'price' ]
 ```
 
-We can then use a `for loop`
+We can then use a `for loop`.
 
 ```js
 for (let i = 0; i < computerKeys.length; i++) {
@@ -83,13 +83,13 @@ for (let i = 0; i < computerKeys.length; i++) {
 }
 ```
 
-To call a function inside an object, we must invoke the function
+To call a function inside an object, we must invoke the function.
 
 ```js
 console.log(computer.powerUp());
 ```
 
-To change a property we can overwrite it
+To change a property, we can overwrite it.
 
 ```js
 computer.price = 5;
@@ -97,7 +97,7 @@ computer.price = 5;
 console.log(computer.price);
 ```
 
-To add a property, we name the key and set a value
+To add a property, we name the key and set a value.
 
 ```js
 computer.color = "griege";
@@ -139,7 +139,7 @@ const backpack = {
 };
 ```
 
-Work your way to console log the following
+Work your way to console log the following.
 
 1. color
 1. contents
@@ -170,11 +170,11 @@ console.log(backpack.unZipIt().pickUpItems()[2]);
 
 ## Object Destructuring
 
-Let's imagine we are building a web page that is showing all the contents of the backpack.
+Let's imagine we are building a web page that shows the backpack's contents.
 
-When we get to `contents` - we will have to type `backpack.contents` every single time, which makes our code a bit long and perhaps, even tougher to read. This is especially true if you are working with someone else's object who was not careful working naming things and the data you are working with has properties like `whatchamacallit.thingie.thing.stuff1.otherstuff`
+When we get to `contents` - we will have to type `backpack.contents` every single time, which makes our code a bit long and, perhaps, even tougher to read. This is especially true if you are working with someone else's object which was not careful working naming things and the data you are working with has properties like `whatchamacallit.thingie.thing.stuff1.otherstuff`
 
-We can pull out our contents and use them directly, the new variable must be named the same as the key
+We can pull out our contents and use them directly. The new variable must be named the same as the key.
 
 ```js
 const { contents } = backpack;
@@ -191,7 +191,7 @@ console.log("just contents:", contents); // our new object
 console.log("backpack:", backpack.contents); // our old object
 ```
 
-We can do this inside a function
+We can do this inside a function.
 
 ```js
 const showContents = ({ contents }) => {
@@ -213,7 +213,7 @@ console.log(clip);
 
 ## Combining objects
 
-Let's go back to our `computer`. We have scored a `box` and we want to combine the contents with our computer.
+Let's go back to our `computer`. We have scored a `box` and want to combine the contents with our computer.
 
 ```js
 const box = {
@@ -226,9 +226,9 @@ const box = {
 
 There is a function called `Object.assign` that will merge our objects together.
 
-The first argument is the target object, the second is will have its content moved in. What happens if both have the same property like `brand`? What happens if the property value has changed like `working`?
+The first argument is the target object. The second will have its content moved in. What happens if both have the same property, like `brand`? What happens if the property value has changed like `working`?
 
-Notice, that the properties for `computer` have been updated, but `box` has not.
+Notice that the properties for `computer` have been updated, but `box` has not.
 
 ```js
 const newComputer = Object.assign(computer, box);
@@ -264,7 +264,7 @@ console.log("===Rest Computer ===");
 console.log(restComputer);
 ```
 
-Finally, we have a shortcut for adding key value pairs
+Finally, we have a shortcut for adding key-value pairs.
 
 ```js
 const a = 5;
@@ -280,20 +280,20 @@ const someObject = {
 console.log(someObject);
 ```
 
-Take the time to run this code and see if you can explain what it is doing
+Take the time to run this code and see if you can explain what it is doing.
 
 ## Word Frequency
 
-Write a function `findWordFrequency` that takes a sentence (a string), and returns an object with each word as a key, with a value of how many times that word appears in a the sentence
+Write a function `findWordFrequency` that takes a sentence (a string) and returns an object with each word as a key, with a value of how many times that word appears in the sentence.
 
 [Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo](https://en.wikipedia.org/wiki/Buffalo_buffalo_Buffalo_buffalo_buffalo_buffalo_Buffalo_buffalo)
 
-Would result in:
+This would result in the following:
 
 ```js
 {
-  buffalo: 5,
-  Buffalo: 3
+ buffalo: 5,
+ Buffalo: 3
 }
 ```
 
@@ -301,21 +301,21 @@ Would result in:
 
 2. What are we asked to show?
 
-3. Restate the problem in your own words (it's ok if your words are more clumsy, you don't need the perfect phrasing, you just need to clarify that you understand he problem, and one of the best ways to do that is to put it in your own words)
+3. Restate the problem in your own words (it's ok if your words are more clumsy, you don't need the perfect phrasing, you need to clarify that you understand the problem, and one of the best ways to do that is to put it in your own words)
 
 4. Is there enough information for you to find a solution?
 
-   - Is there any information that is missing?
+- Is there any information that is missing?
 
 5. What is our plan?
 
-   - Do we need more test cases beyond the one(s) provided?
+- Do we need more test cases beyond the one(s) provided?
 
-   - Convert sentence to an array of words
-   - Loop over the array of words
-   - If the word is not an object key, add it as a key and set the count value to 1
-   - Else if the word is an object key, increase the count value to 1
-   - Loop over the object to find the word with the greatest frequency
+- Convert sentence to an array of words
+- Loop over the array of words
+- If the word is not an object key, add it as a key and set the count value to 1
+- Else, if the word is an object key, increase the count value to 1
+- Loop over the object to find the word with the greatest frequency
 
 Get started:
 
@@ -330,7 +330,7 @@ const wordCounter = (sentence) => {
 console.log(wordCounter(buffaloSentence));
 ```
 
-Convert sentence to array of words
+Convert a sentence to an array of words
 
 ```js
 const wordCounter = (sentence) => {
@@ -349,7 +349,7 @@ const wordCounter = (sentence) => {
   for (let word of wordsArray) {
     console.log(word);
   }
-  //   return wordsArray;
+  // return wordsArray;
 };
 
 console.log(wordCounter(buffaloSentence));
@@ -394,7 +394,7 @@ console.log(wordCounter(roseSentence));
 
 Finally, we need to figure out which word has the highest frequency.
 
-This is actually a separate task than counting words, so let's write a new function.
+This is a separate task from counting words, so let's write a new function.
 
 ```js
 const findHighestFrequency = (wordsObj) => {
@@ -406,9 +406,9 @@ const buffaloWords = wordCounter(buffaloSentence);
 console.log(findHighestFrequency(buffaloWords));
 ```
 
-We need to return two values: the word and the count. We'll store it as an object, the word being the key and the count being the value
+We need to return two values: the word and the count. We'll store it as an object, the word being the key and the count being the value.
 
-Then, we will loop over each key and check if it has the highest count. If it has the highest count, then we will store it as the new value, if it does not have a higher count, we will not update the object.
+Then, we will loop over each key and check if it has the highest count. We will store it as the new value if it has the highest count. We will not update the object if it does not have a higher count.
 
 ```js
 const findHighestFrequency = (wordsObj) => {
@@ -461,11 +461,11 @@ We would want to look at each word and `replace`any character that is not a lett
 We can use a regular expression:
 
 - Every lowercase letter:
-  - `/[a-z]/g`
+- `/[a-z]/g`
 - Every letter (lowercase and uppercase)
-  - `[a-z]/gi`
+- `[a-z]/gi`
 - NOT every letter
-  - `/[^a-z]/gi`
+- `/[^a-z]/gi`
 
 ```js
 const wordCounter = (sentence) => {

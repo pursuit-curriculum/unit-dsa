@@ -6,12 +6,12 @@
 
 ## Trivia Questions
 
-- What is a higher order function?
+- What is a higher-order function?
 - What is a callback?
 
 ## Word Frequency
 
-Write a function `findWordFrequency` that takes a sentence (a string), and returns an object with each word as a key, with a value of how many times that word appears in a the sentence
+Write a function `findWordFrequency` that takes a sentence (a string) and returns an object with each word as a key, with a value of how many times that word appears in the sentence
 
 [Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo](https://en.wikipedia.org/wiki/Buffalo_buffalo_Buffalo_buffalo_buffalo_buffalo_Buffalo_buffalo)
 
@@ -19,8 +19,8 @@ Would result in
 
 ```js
 {
-    Buffalo: 3,
-    buffalo: 5
+ Buffalo: 3,
+ buffalo: 5
 }
 ```
 
@@ -28,19 +28,19 @@ A second example: `Rose rose to look at her rose`
 
 ```js
 {
-  Rose: 1,
-  rose: 2,
-  to: 1,
-  look: 1,
-  at: 1,
-  her: 1,
+ Rose: 1,
+ rose: 2,
+ to: 1,
+ look: 1,
+ at: 1,
+ her: 1,
 }
 ```
 
 ## More Problems (Solve if you finished the main problem or want more practice)
 
-1. Write a function that takes the Bond movies, and returns a new array of just the titles
-2. Write a function that takes the Bond movies, and returns a new array filtering for only movies released before 1990
+1. Write a function that takes the Bond movies and returns a new array of just the titles
+2. Write a function that takes the Bond movies and returns a new array filtering for only movies released before 1990
 3. Write a function that sums the totals of `gross` to determine the total amount of money these films have generated
 
 ### James Bond Movies

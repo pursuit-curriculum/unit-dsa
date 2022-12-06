@@ -16,14 +16,12 @@ Discuss as a class, and keep this in mind throughout your day.
 
 ## Fibonacci Sequence
 
-Write a function that prints numbers in the Fibonacci sequence up to a give limit
+Write a function that prints numbers in the Fibonacci sequence up to a given limit
 
 - `fibonacci(5)`
-  - 0, 1, 1, 2, 3, 5
+- 0, 1, 1, 2, 3, 5
 - `fibonacci(23)`
-  - 0, 1, 1, 2, 3, 5, 8, 13, 21
-
-
+- 0, 1, 1, 2, 3, 5, 8, 13, 21
 
 ## More Problems (Solve if you finished the main problem or want more practice)
 

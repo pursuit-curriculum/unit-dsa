@@ -1,6 +1,6 @@
 # Control Flow
 
-Control flow makes up the basic building blocks of programming
+Control flow makes up the basic building blocks of programming.
 
 ## Learning Objectives
 
@@ -13,7 +13,7 @@ Control flow makes up the basic building blocks of programming
 
 ## Conditionals
 
-Conditional statements help us determine what we should do. If you are doing a whiteboard interview, you can create a flowchart to help structure the code you will write
+Conditional statements help us determine what we should do. If you are doing a whiteboard interview, you can create a flowchart to help structure the code you will write.
 
 [JavaScript Equality Table](https://dorey.github.io/JavaScript-Equality-Table/)
 
@@ -48,21 +48,21 @@ if (moving === true)
 if (moving)
 ```
 
-Will all run the code when `moving` is true. One difference is that the final one will test for a truthy value as opposed to the value `true`, which can make the final expression a little more flexible
+Will all run the code when `moving` is true? One difference is that the final one will test for a truthy value instead of the value `true`, which can make the last expression a little more flexible.
 
 [Reference](https://dorey.github.io/JavaScript-Equality-Table/)
 
 ## Functions
 
-Right now, the only way we can test if our item should move, is by going into the file and changing the values of `moving` and `shouldBeMoving`. The code will run immediately and only run once.
+Right now, we can only test if our item should move by going into the file and changing the values of `moving` and `shouldBeMoving`. The code will run immediately and only run once.
 
-Functions allow us to create reusable blocks of code that we can control when they run and how many times they run
+Functions allow us to create reusable blocks of code to control when and how many times they run.
 
 Therefore, we can improve this code by putting it in a function.
 
-Refactoring code can be hard, it takes practice. It is still recommended to work outside in order to refactor.
+Refactoring code can be challenging, and it takes practice. It is still recommended to work outside to refactor.
 
-First, create the outer function
+First, create the outer function.
 
 ```js
 const fixIt = () => {};
@@ -101,13 +101,13 @@ We have a few different ways to write loops.
 
 A `while` loop is a great choice when you don't know how many times a piece of programming should run:
 
-**Note:** to use `prompt` and `alert`, you need to run this code in the browser, repl.it may also block this functionality. It is ok to not run this code but simply understand it
+**Note:** To use `prompt` and `alert`, you need to run this code in the browser, repl.it may also block this functionality. It is ok not to run this code but simply understand it.
 
 ```js
 let secretPhrase = prompt('Enter the secret');
 
 while (secretPhrase != 'open sesame') {
-    secretPhrase = prompt('Nope! Guess again!');
+ secretPhrase = prompt('Nope! Guess again!');
 }
 
 alert('you guessed it! Nice job!);
@@ -146,7 +146,7 @@ Could we use `return` instead?
 
 ## Print Primes
 
-Now that we've reviewed the basic building blocks, let's go through how to solve the Print Primes problem.
+Now that we've reviewed the basic building blocks let's go through how to solve the Print Primes problem.
 
 > Write a function that takes an integer and then returns an array of all the prime numbers up to that value.
 
@@ -154,21 +154,21 @@ Now that we've reviewed the basic building blocks, let's go through how to solve
 
 - What is an integer?
 - What is a prime number?
-  - Is 0 a prime number?
-  - Is 1 a prime number?
-  - Is 2 a prime number?
-  - Can a prime number be negative?
+- Is 0 a prime number?
+- Is 1 a prime number?
+- Is 2 a prime number?
+- Can a prime number be negative?
 - How can we determine a number is prime?
 
 2. What are we asked to show?
 
-   - An array of prime numbers
+- An array of prime numbers
 
-3. Restate the problem in your own words (it's ok if your words are more clumsy, you don't need the perfect phrasing, you just need to clarify that you understand he problem, and one of the best ways to do that is to put it in your own words)
+3. Restate the problem in your own words (it's ok if your words are more clumsy, you don't need the perfect phrasing, you need to clarify that you understand the problem, and one of the best ways to do that is to put it in your own words)
 
 4. Is there enough information for you to find a solution?
 
-   - Is there any information that is missing?
+- Is there any information that is missing?
 
 5. What is our plan?
 
@@ -179,7 +179,7 @@ This problem is actually two problems
 - determining if a number is prime
 - putting prime numbers, up to some upper limit value, into an array
 
-Let's solve the first problem, first by hand. We'll look at two simple test cases: 4 which is NOT prime and 5 which is prime
+Let's solve the first problem, first by hand. We'll look at two simple test cases: 4, which is NOT prime, and 5, which is prime.
 
 ```js
 // a prime number is a number that is evenly divisible by numbers other than one and itself
@@ -187,7 +187,7 @@ Let's solve the first problem, first by hand. We'll look at two simple test case
 // 4
 
 // 4 is not evenly divisible by 3
-// 4 is evenly divisible by 2 therefore 4 is NOT prime
+// 4 is evenly divisible by 2; therefore, 4 is NOT prime
 
 // 5
 
@@ -198,7 +198,7 @@ Let's solve the first problem, first by hand. We'll look at two simple test case
 
 Do we see a pattern? How can we translate this to code?
 
-First, get started with small testable steps
+First, get started with small testable steps.
 
 ```js
 const isPrime = (num) => {
@@ -207,9 +207,9 @@ const isPrime = (num) => {
 console.log(isPrime(4));
 ```
 
-Now, write a loop that starts at 2 (the smallest number we can check) to up to, but not including our number.
+Write a loop that starts at 2 (the smallest number we can check) up to, but not including our number.
 
-Let's just console log that our loop is just looping over the correct values:
+Let's console log that our loop is just looping over the correct values:
 
 ```js
 const isPrime = (num) => {
@@ -233,7 +233,7 @@ const isPrime = (num) => {
 console.log(isPrime(4));
 ```
 
-We see that we get a remainder of 0. If we get a remainder of 0 then the number is not prime
+We see that we get a remainder of 0. If we get a remainder of 0, then the number is not prime
 
 ```js
 const isPrime = (num) => {
@@ -253,7 +253,7 @@ Let's test 5:
 console.log(isPrime(5));
 ```
 
-Do we need to solve for edge cases? Solving edge cases is usually easier to solve after the basic problem is solved
+Do we need to solve for edge cases? Edge cases are usually easier to solve after the basic problem is solved.
 
 - numbers less than 2 are NOT prime
 - numbers that are NOT integers are not prime
@@ -285,10 +285,10 @@ Make a plan
 
 ```js
 // start with an empty array
-//  write a loop starting at 2 and ending at the number entered
+// write a loop starting at 2 and ending at the number entered
 // check if the number is prime
 // if prime, push into the array
-// if not prime, do nothing, go to the next number
+// if not prime, do nothing. Go to the next number.
 ```
 
 Get started in a simple, testable way:
@@ -311,7 +311,7 @@ const printPrimes = (limit) => {
 console.log(printPrimes(6));
 ```
 
-Oops! We want to include the limit
+Oops! We want to include the limit.
 
 ```js
 const printPrimes = (limit) => {
@@ -324,7 +324,7 @@ const printPrimes = (limit) => {
 console.log(printPrimes(6));
 ```
 
-How can we check if the number is prime? We could copy the code we wrote earlier. Or, we can just call `isPrime` inside this function
+How can we check if the number is prime? We could copy the code we wrote earlier. Or, we can call `isPrime` inside this function.
 
 ```js
 const printPrimes = (limit) => {
@@ -337,16 +337,16 @@ const printPrimes = (limit) => {
 console.log(printPrimes(6));
 ```
 
-By console logging and testing for a known number, We can confirm that we are getting what we would expect - sometimes we will have unit tests during our interviews and sometimes we won't. So it's important to determine ways to check your code on your own.
+By console logging and testing for a known number, We can confirm that we are getting what we would expect - sometimes, we will have unit tests during our interviews, and sometimes we won't. So it's essential to determine ways to check your code on your own.
 
-Let's look back at our plan
+Let's look back at our plan.
 
 ```js
 // if prime, push into the array
-// if not prime, do nothing, go to the next number
+// if not prime, do nothing. Go to the next number.
 ```
 
-and translate it into code:
+And translate it into code:
 
 ```js
 const printPrimes = (limit) => {
@@ -365,7 +365,7 @@ console.log(printPrimes(6));
 
 ### Making our code better
 
-We don't need the else statement. Let's get rid of it
+We don't need the else statement. Let's get rid of it.
 
 ```js
 const printPrimes = (limit) => {
@@ -380,9 +380,9 @@ const printPrimes = (limit) => {
 console.log(printPrimes(6));
 ```
 
-We can optimize our `isPrime` function
+We can optimize our `isPrime` function.
 
-Right now we are testing
+Right now, we are testing.
 
 - 11 % 2
 - 11 % 3
@@ -394,11 +394,11 @@ Right now we are testing
 - 11 % 9
 - 11 % 10
 
-However, 6 x 2 is 12 and 7 x 2 is 14 etc. These are bigger than 11. Therefore there is no reason to test them.
+However, 6 x 2 is 12, and 7 x 2 is 14, etc. These are bigger than 11. Therefore there is no reason to test them.
 
-In fact, all numbers above 5 are too big to be evenly divisible for 11.
+All numbers above 5 are too big to be evenly divisible for 11.
 
-What would be the largest number that could be divisible be?
+What would be the largest number that could be divisible?
 
 > It would be the square root
 
@@ -406,7 +406,7 @@ With 11 - that would be 3.31
 
 We only have to worry about integers, so the number we would need to check up to is 3
 
-To determine the square root of a number, we can use the `Math.sqrt` method
+To determine the square root of a number, we can use the `Math.sqrt` method.
 
 ```js
 const isPrime = (num) => {
@@ -427,7 +427,7 @@ const isPrime = (num) => {
 console.log(printPrimes(30));
 ```
 
-One final oops! We are now accidentally adding perfect squares like 4 and 9 as primes! We need to say that the loop goes to, and includes i.
+One final oops! We are now accidentally adding perfect squares like 4 and 9 as primes! We need to say that the loop goes to and includes i.
 
 ```js
 const isPrime = (num) => {
@@ -452,9 +452,9 @@ And we did it! We solved the print primes problem!
 
 ## Bonus Function Syntax Variations Reference
 
-JavaScript made some major updates in 2016 to its code base. Since 2016, small updates are being made annually.
+JavaScript made some significant updates in 2016 to its code base. Since 2016, minor updates have been made annually.
 
-One thing that has happened is that there are many variations on the syntax of functions.
+One thing that has happened is that there are many variations in the syntax of functions.
 
 If you need a review, check it out here:
 
@@ -464,6 +464,6 @@ If you need a review, check it out here:
 
 Eloquent JavaScript
 
-[Chapter 1: Values, Types and Operators](https://eloquentjavascript.net)
+[Chapter 1: Values, Types, and Operators](https://eloquentjavascript.net)
 [Chapter 2: Program Structure](https://eloquentjavascript.net/02_program_structure.html)
 [Chapter 3: Functions](https://eloquentjavascript.net/03_functions.html)

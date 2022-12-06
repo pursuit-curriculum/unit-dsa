@@ -2,18 +2,18 @@
 
 ### Setting intent
 
-Take a moment to compare where you were when you started. Take 3 minutes to write down everything you can remember about you've learned recently. Be ready to share in a group.
+Take a moment to compare where you were when you started. Take 3 minutes to write down everything you can remember about what you've learned recently. Be ready to share in a group.
 
 ## Trivia Questions
 
 - What does passed by reference mean?
-- What does passed by value mean?
+- What does passed-by value mean?
 
 ## Make an Array of Unique Items
 
-Given an array that has duplicate items, write function `unique` that will return a new array with no duplicates.
+Given an array with duplicate items, write the function `unique` that will return a new array with no duplicates.
 
-This time, look up the answer. Try your own search and/or check out these possible answers. Adapt the code to be your own and test it.
+This time, look up the answer. Try your own search or check out these possible answers. Adapt the code to be your own and test it.
 
 - [this resource](https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates)
 - [or this one](https://stackoverflow.com/questions/2218999/how-to-remove-all-duplicates-from-an-array-of-objects)
@@ -34,13 +34,13 @@ const animals = [
 ];
 ```
 
-Now that you've chosen a possible solution and tested it with the test array. Why did you choose the one you chose?
+Now that you've chosen a possible solution and tested it with the test array. Why did you choose the one you selected?
 
 Be ready to discuss your choice as a group.
 
 ## Make an array of Unique Objects
 
-Write a function that will allow you to choose a key, and then make a new array of unique objects
+Write a function that will allow you to choose a key and then make a new array of unique objects.
 
 ```js
 const catArt = [
@@ -114,14 +114,14 @@ const catArt = [
 
 ## Further
 
-[Check out other implementations of Data Structures with JavaScript](https://github.com/TheAlgorithms/Javascript) - one thing you'll note is that there are some different approaches to each data structure. We focused on simplicity and similar syntax in order to get fundamentals set. Deepen your understanding by looking at other implementations. Keep googling to see even more implementations and you may even find some implementations as npm packages that are meant for production level code - try to see what other considerations need to be accounted for when it comes to putting this kind of code into a project.
+[Check out other implementations of Data Structures with JavaScript](https://github.com/TheAlgorithms/Javascript) - one thing you'll note is that there are some different approaches to each data structure. We focused on simplicity and similar syntax to get the fundamentals set. Deepen your understanding by looking at other implementations. Keep googling to see even more implementations. You may even find some implementations as npm packages meant for production-level code. See what other considerations need to be accounted for when putting this kind of code into a project.
 
 ### Lab: Accumulate points on Codewars
 
-Be sure to get enough points to pass the gate, go back and wrap up any unsolved kata.
+Be sure to get enough points to pass the unit, go back, and wrap up any unsolved kata.
 
 ## Next
 
-If employers do a technical interview that involves a code challenge, the most common platforms are [Leetcode](https://leetcode.com), [Code Signal](https://codesignal.com) an [HackerRank](https://www.hackerrank.com).
+If employers do a technical interview that involves a code challenge, the most common platforms are [Leetcode](https://leetcode.com), [Code Signal](https://codesignal.com), and [HackerRank](https://www.hackerrank.com).
 
-It would be prudent to attempt at least one question from each platform. The hiring process is always changing and being updated, different platforms may gain or lose popularity - be sure to keep your finger on the pulse and get practice on the right platform(s).
+It would be prudent to attempt at least one question from each platform. The hiring process is constantly changing and being updated. Different platforms may gain or lose popularity - be sure to keep your finger on the pulse and get practice on the right platform(s).

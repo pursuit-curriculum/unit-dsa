@@ -9,9 +9,9 @@
 
 ## Inheritance
 
-Note: we are building on top of our code we wrote yesterday.
+Note: we are building on top of the code we wrote yesterday.
 
-In our world of animals, let's say there is a new kind: Mythical creature. The mythical creature will have all the properties of methods as an animal and some additional ones. We could copy our `Animal` class and paste it and add more, but what if we need to change the `greet` function? Then we would have to find every place we copy/pasted and carefully update. We are going to keep our animal as our one source of truth as a parent class.
+Let's say there is a new kind in our world of animals: Mythical creature. The mythical creature will have all the properties of methods as an animal and some additional ones. We could copy our `Animal` class, paste it, and add more, but what if we change the `greet` function? Then we would have to find every place we copy-pasted and carefully update. We will keep our animal as our one source of truth as a parent class.
 
 Original Animal:
 
@@ -69,7 +69,7 @@ chips.walk();
 chips.grantWish("always write bug free code");
 ```
 
-We can override previous functionality
+We can override previous functionality.
 
 ```js
 class MythicalCreature extends Animal {
@@ -88,7 +88,7 @@ chips.grantWish("always write bug free code");
 chips.walk();
 ```
 
-We can reference the parent's class' method and and extend its original functionality
+We can reference the parent's class method and extend its original functionality.
 
 ```js
 class MythicalCreature extends Animal {
@@ -113,7 +113,7 @@ chips.grantWish("always write bug free code");
 chips.greet("Marshmallow");
 ```
 
-We can also add properties in the constructor
+We can also add properties in the constructor.
 
 ```js
 class MythicalCreature extends Animal {
@@ -168,23 +168,23 @@ const deck = new DeckOfCards();
 console.log(deck);
 ```
 
-The above is a good start, but we need to make sure we understand the specks
+The above is a good start, but we must ensure we understand the specs.
 
-> The goal will be to play a simple game of Blackjack (two players, each get two cards, determine who wins)
+> The goal will be to play a simple game of Blackjack (two players, each gets two cards, determine who wins)
 
 - Cards with a face of 2 - 10, jack, queen, king ace
-- Values of cards 2-10 are same as face, jack, queen, and king are worth 10, ace starts as a value of 11, but can be changed to a value of 1
+- Values of cards 2-10 are the same as the face. Jack, queen, and king are worth 10. Ace starts as a value of 11 but can be changed to a value of 1
 - There are 4 sets of 13 cards (hearts, diamonds, spades, clubs)
 
 - The card objects should go in an array
-- There should be a method that 'shuffles' the deck, the card objects can be reordered
-- As each play happens, two cards are given to the player and two are given to the computer player - these cards are removed from the array of card objects
+- There should be a method that 'shuffles' the deck. The card objects can be reordered
+- As each play happens, two cards are given to the player, and two are given to the computer player - these cards are removed from the array of card objects
 
-> Write down any questions you have about this model, what information is needed? What other considerations are there?
+> Write down any questions about this model. What information is needed? What other considerations are there?
 
-Cards are objects. They are not simple numbers. There are also 4 sets.
+Cards are objects. They are not simple numbers. There are also four sets.
 
-Let's create a `Card` class
+Let's create a `Card` class.
 
 ```js
 class Card {
@@ -196,7 +196,7 @@ class Card {
 }
 ```
 
-And update our `Deck` class
+And update our `Deck` class.
 
 ```js
 class DeckOfCards {
@@ -215,7 +215,7 @@ const deck = new DeckOfCards();
 console.log(deck);
 ```
 
-Let's add some more logic to make sure our card values match what they should be for a game of Blackjack
+Let's add some more logic to ensure our card values match what they should be for a game of Blackjack.
 
 ```js
 class DeckOfCards {
@@ -247,7 +247,7 @@ console.log(deck);
 Now, let's add the different suits:
 
 **Hint**: write your `j` for loop first. Then copy and paste the entirety of your `i` loop inside.
-**Hint 2:** Highlight the first `hearts` you want to replace, then press <kbd>command</kbd> <kbd>d</kbd> until you have highlighed the ones below, now type `suits[j]` in their place
+**Hint 2:** Highlight the first `hearts` you want to replace, then press <kbd>command</kbd> <kbd>d</kbd> until you have highlighted the ones below. Now type `suits[j]` in their place
 
 ```js
 class DeckOfCards {
@@ -281,7 +281,7 @@ console.log(deck);
 
 We now need a way to shuffle the deck. There is no built-in shuffle method in JavaScript. So let's look up how to do it.
 
-There is a [Fisher-Yates Shuffle](https://bost.ocks.org/mike/shuffle/) - This one is written by Mike Bostock - he wrote the D3 JavaScript library which is used to create a lot of visuals used by the NYT.
+There is a [Fisher-Yates Shuffle](https://bost.ocks.org/mike/shuffle/) - Mike Bostock wrote this one - he also wrote the D3 JavaScript library, which is used to create a lot of visuals used by the NYT.
 
 ```js
 shuffle (array) {};
@@ -370,7 +370,7 @@ const createDeck = () => {
 };
 ```
 
-This works a lot like an if/else statement, but can be easier to read if there are a lot of cases.
+This works a lot like an if/else statement but can be easier to read if there are a lot of cases.
 
 </details>
 
@@ -413,13 +413,13 @@ if (playerHandSum > theHouseHandSum) {
 
 Can you think of the edge case where this logic may not work as expected?
 
-**Hint** What happens if someone has two aces as their hand?
+**Hint** What happens if someone has two aces in their hand?
 
 How would you solve it?
 
 ### Continue Game Play
 
-We would likely want each player to have a name, an amount of money to bet, a total amount of money and more. We could keep making separate values for each one like `playerName`, `playerHand`, `playerBet`, `playerBankroll`, `playerNumOfWins`. But what becomes the problem with such a strategy? What happens if this is a game ends up going into production and is played by millions of people and we are expected to implement all the rules of Black Jack? What could we do to organize our code?
+We would likely want each player to have a name, an amount of money to bet, a total amount of money, and more. We could keep making separate values for each one like `playerName`, `playerHand`, `playerBet`, `playerBankroll`, `playerNumOfWins`. But what becomes the problem with such a strategy? What happens if this game ends up going into production and is played by millions of people, and we are expected to implement all the rules of Black Jack? What could we do to organize our code?
 
 ## Further Reading
 
@@ -429,9 +429,9 @@ Eloquent JavaScript
 
 ### Extreme Super Bonus
 
-Read this code, analyze what it does then research what is `prototype` in JavaScript, how it works and what does it do?
+Read this code, analyze what it does, then research what is `prototype` is in JavaScript, how it works and what does it do?
 
-How does it relate to this lesson on classes?
+How does it relate to this lesson in classes?
 
 ```js
 String.prototype.reverse = function () {
@@ -441,7 +441,7 @@ String.prototype.reverse = function () {
 console.log("foMO".reverse());
 ```
 
-Check out [README3.md from the linked list lesson (note: go through linked list lesson to understand the examples provided)](../linked-lists/lesson-notes/README2.md)
+Check out [README3.md from the linked list lesson (note: go through the linked list lesson to understand the examples provided)](../linked-lists/lesson-notes/README2.md)
 
 Check out this section of [You Don't Know JS: this & Object Prototypes](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes)
 

@@ -7,13 +7,13 @@
 
 ## Divide and Conquer
 
-Certain types of problems appear again and again. There are numerous brilliant people who have spent their lives dedicated to finding optimal solutions. When we study algorithms, we have an opportunity to use what they have learned, which makes our problem solving skills sharper and better. This approach makes us stronger problem solvers.
+Certain types of problems appear again and again. Numerous brilliant people have spent their lives dedicated to finding optimal solutions. When we study algorithms, we can use what they have learned, which makes our problem-solving skills sharper and better. This approach makes us stronger problem solvers.
 
-We do this all the time in our own lives. Perhaps you have a pickle jar that is stuck. Your initial approach may be to smash the jar with a hammer and carefully pick the pickles out. While you did achieve the goal of accessing the pickles, this method is not ideal. Perhaps then, you google "cannot open pickle jar" and you find numerous solutions like: heating the lid under hot water, using a rubber grip, using a can opener to break the seal on the side of the lid etc.
+We do this all the time in our own lives. Perhaps you have a pickle jar that is stuck. Your initial approach may be to smash the jar with a hammer and carefully pick the pickles out. While you did achieve the goal of accessing the pickles, this method is not ideal. Perhaps then, you google "cannot open a pickle jar," and you find numerous solutions like heating the lid under hot water, using a rubber grip, using a can opener to break the seal on the side of the lid, etc.
 
-In taking the time to google and learn other approaches, you are now better at opening pickle jars and can approach other jars for jam, milk, kefier, pickled beets and more better as well.
+In taking the time to google and learn other approaches, you are now better at opening pickle jars and can approach other jars for jam, milk, kefir, pickled beets, and better.
 
-The same can be applied to the study of algorithms. Usually our initial approach is along the lines of `brute force` - which is usually checking every single possibility until the right one is found. Using `brute force` to solve a problem is better than not solving the problem. However, taking the time to learn better approaches will make you a better problem solver and coder.
+The same can be applied to the study of algorithms. Usually, our initial approach is along the lines of `brute force` - generally checking every possibility until the right one is found. Using `brute force` to solve a problem is better than not solving the problem. However, taking the time to learn better approaches will make you a better problem solver and coder.
 
 Brute force example:
 
@@ -29,13 +29,13 @@ const square = (n) => {
 };
 ```
 
-Divide and conquer is a technique where one breaks the problem down (divides) into the smallest pieces possible. Then, one solves the problem by conquering each small problem and then finally, combining the solutions.
+Divide and conquer is a technique where one breaks the problem down (divides) into the smallest pieces possible. Then, one solves the problem by conquering each small problem and then, finally, combining the solutions.
 
-Have we seen any divide and conquer strategies with the algorithms we have been practicing so far?
+Have we seen any divide-and-conquer strategies with the algorithms we have been practicing so far?
 
 ## Merge Sort
 
-Merge sort follows the divide and conquer paradigm closely.
+Merge sort follows the divide-and-conquer paradigm closely.
 
 ### Conquer
 
@@ -46,7 +46,7 @@ const left = [1, 4, 8];
 const right = [3, 6];
 ```
 
-We can sort them into one new array
+We can sort them into one new array.
 
 ```js
 const sortedArray = [];
@@ -55,35 +55,35 @@ const sortedArray = [];
 By comparing the first values in the array
 
 - if `left[0] > right[0]`
-  - remove `[left][0]` from the array and put it into the sorted array
+- remove `[left][0]` from the array and put it into the sorted array
 - if `left[0] < right[0]` OR `left[0]===right[0]`
-  - remove `[right][0]` from the array and put it into the sorted array
+- remove `[right][0]` from the array and put it into the sorted array
 
-After one round we would expect
+After one round, we would expect
 
 - `sortedArray = [1]`
 - `left = [4, 8]`
 - `right = [3,6]`
 
-We can do another round, this time we are comparing `left[0]` - which is now `4` because we removed `1` and `right[0]`'s value of `3
+We can do another round. This time we are comparing `left[0]` - which is now `4` because we removed `1` and `right[0]`'s value of `3
 
 - `sortedArray = [1,3]`
 - `left = [4, 8]`
 - `right = [6]`
 
-We can do another round, this time we are comparing `left[0]` - which is still `4` and `right[0]`'s value of `6`
+We can do another round. This time we are comparing `left[0]` - which is still `4` and `right[0]`'s value of `6`
 
 - `sortedArray = [1,3]`
 - `left = [4, 8]`
 - `right = [6]`
 
-We can do another round, this time we are comparing `left[0]` - which is `8` and `right[0]`'s value of `6`
+We can do another round. This time we are comparing `left[0]` - which is `8` and `right[0]`'s value of `6`
 
 - `sortedArray = [1,3,4]`
 - `left = [8]`
 - `right = [6]`
 
-This is working out quite nicely! Let's write the code
+This is working out quite nicely! Let's write the code.
 
 ```js
 const merge = (left, right) => {
@@ -99,10 +99,10 @@ const merge = (left, right) => {
 };
 
 console.log(merge([1, 4, 8], [3, 6]));
-// [  1, 3, 4, 6  ]
+// [ 1, 3, 4, 6 ]
 ```
 
-Not bad! We still have a few bugs to work out. We lost 8, because our `while` loop ended when the length of either `right` or `left` went to 0, so let's include those last values
+Not bad! We still have a few bugs to work out. We lost 8 because our `while` loop ended when the length of either `right` or `left` went to 0, so let's include those last values.
 
 ```js
 const merge = (left, right) => {
@@ -121,7 +121,7 @@ console.log(merge([1, 4, 8], [3, 6]));
 //[ [ 1, 3, 4, 6 ], [ 8 ], [] ]
 ```
 
-Now we just want a 1 dimensional array
+Now we want a one-dimensional array.
 
 ```js
 const merge = (left, right) => {
@@ -142,12 +142,12 @@ console.log(merge([1, 4, 8], [3, 6]));
 
 ### The Unsolved Issue
 
-In or example, our arrays were already sorted
+In our example, our arrays were already sorted.
 
 const left = [1, 4, 8];
 const right = [3, 6];
 
-if we tried
+If we tried
 
 ```js
 const left = [4, 8, 1];
@@ -160,9 +160,9 @@ We would get
 [4, 6, 3, 8, 1];
 ```
 
-We need a way to sort the bigger arrays first. The way to do it would be to take two arrays of one element each then put them in a sorted array, and continue merging them together.
+We need a way to sort the bigger arrays first. The way to do it would be to take two arrays of one element each, then put them in a sorted array and continue merging them.
 
-The way we can be sure an array is sorted is if there is only one item in it. Then we can combine two arrays with one item in a sorted way. Let's look at a visualization:
+We can ensure an array is sorted if there is only one item in it. Then we can combine two arrays with one item in a sorted way. Let's look at a visualization:
 
 ![](../assets/merge-sort-in-python-1.png)
 
@@ -170,18 +170,18 @@ The way we can be sure an array is sorted is if there is only one item in it. Th
 
 ### Divide
 
-Now our goal is to keep splitting our arrays into `left` and `right` until they have just one item in them. Let's look at a small array of numbers so we can step through the divide process and be able to follow it
+Our goal is to keep splitting our arrays into `left` and `right` until they have just one item. Let's look at a small array of numbers so we can step through the divide process and follow it.
 
 ```js
 [9, 1, 5];
 ```
 
-We need to be able to split this down into three single arrays. So let's first break this array into two arrays, we'll refer to the left side as `left` and the right side as `right`
+We need to be able to split this down into three single arrays. So let's first break this array into two arrays. We'll refer to the left side as `left` and the right side as `right`.
 
 - Left: `[9, 1]`
 - Right `[5]`
 
-The right is ok, but the left is still too big, let's look at the left side, we can split this array again
+The right is ok, but the left is still too big. Let's look at the left side. We can split this array again.
 
 - Left: `[9]`
 - Right `[1]`
@@ -204,14 +204,14 @@ console.log(mergeSort(nums));
 const mergeSort = (arr) => {
   const half = arr.length / 2;
   const left = arr.splice(0, half); // make a new array with the first half of the original array
-  const right = arr; // we don't need to rename arr, but it should be helpful for visualizing our code
+  const right = arr; // we don't need to rename arr, but it should help visualize our code
   return [left, right];
 };
 
 // result [ [ 9 ], [ 1, 5 ] ]
 ```
 
-We have confirmed that we can split the array into two parts, even if the number of elements is odd. We can test another set with an even number just to be sure this works as expected
+We have confirmed that we can split the array into two parts, even if the number of elements is odd. We can test another set with an even number to be sure this works as expected.
 
 ```js
 const testEven = [4, 8, 6, 2];
@@ -220,22 +220,22 @@ console.log(mergeSort(testEVen));
 
 Let's return our attention to our original `nums` array.
 
-We need the result to be one array. Let's use the `spread` operator to make it one array
+We need the result to be one array. Let's use the `spread` operator to make it one array.
 
 ```js
 const mergeSort = (arr) => {
   const half = arr.length / 2;
   const left = arr.splice(0, half); // make a new array with the first half of the original array
-  const right = arr; // we don't need to rename arr, but it should be helpful for visualizing our code
+  const right = arr; // we don't need to rename arr, but it should help visualize our code
   return [...left, ...right];
 };
 
-// result [  9 , 1, 5  ]
+// result [ 9 , 1, 5 ]
 ```
 
-Now, we have only been able to divide our arrays once, we need to keep diving them until they are all down to the size of 1. We can use recursion to accomplish this.
+Now, we have only been able to divide our arrays once. We need to keep diving them until they are all down to the size of 1. We can use recursion to accomplish this.
 
-Recursion requires a way to break the problem down into smaller steps and a base case - when recursion is done/can solve the problem.
+Recursion requires breaking the problem into smaller steps and a base case - when recursion is done/can solve the problem.
 
 Our base case will be when the array length is less than or equal to 1. Let's add the logic for the base case:
 
@@ -246,10 +246,10 @@ const mergeSort = (arr) => {
     return arr;
   }
   const left = arr.splice(0, half); // make a new array with the first half of the original array
-  const right = arr; // we don't need to rename arr, but it should be helpful for visualizing our code
+  const right = arr; // we don't need to rename arr, but it should help visualize our code
   return [left, right];
 };
-// [ [9], [1,  5 ]]
+// [ [9], [1, 5 ]]
 ```
 
 We have `9` as an array with a length of 1, but our `1` and `5` are not split up.
@@ -264,7 +264,7 @@ const mergeSort = (arr) => {
     return arr;
   }
   const left = arr.splice(0, half); // make a new array with the first half of the original array
-  const right = arr; // we don't need to rename arr, but it should be helpful for visualizing our code
+  const right = arr; // we don't need to rename arr, but it should help visualize our code
   return [mergeSort(left), mergeSort(right)];
 };
 /* 
@@ -287,14 +287,14 @@ const mergeSort = (arr) => {
     return arr;
   }
   const left = arr.splice(0, half); // make a new array with the first half of the original array
-  const right = arr; // we don't need to rename arr, but it should be helpful for visualizing our code
+  const right = arr; // we don't need to rename arr, but it should help visualize our code
   return [...mergeSort(left), ...mergeSort(right)];
 };
 ```
 
-Nothing interesting seems to happening with our code yet. But we are making progress. We are using small, testable steps to build out this challenging problem. Always try to find small testable steps.
+Nothing interesting seems to happen with our code yet. But we are making progress. We are using small, testable steps to build out this challenging problem. Always try to find small testable steps.
 
-Now that we have built the `divide` portion of our divide and conquer strategy, let's combine it with the `conquer` portion.
+Now that we have built the `divide` portion of our divide and conquer strategy let's combine it with the `conquer` portion.
 
 ```js
 const mergeSort = (arr) => {
@@ -304,7 +304,7 @@ const mergeSort = (arr) => {
     return arr;
   }
   const left = arr.splice(0, half); // make a new array with the first half of the original array
-  const right = arr; // we don't need to rename arr, but it should be helpful for visualizing our code
+  const right = arr; // we don't need to rename arr, but it should help visualize our code
   return merge(mergeSort(left), mergeSort(right));
 };
 ```
@@ -350,7 +350,7 @@ const cardSort = (arr) => {
 console.log(cardSort(cards));
 ```
 
-We'll sort the suits alphabetically: Clubs, Diamonds, Hearts, Spades
+We'll sort the suits alphabetically: Clubs, Diamonds, Hearts, and Spades.
 
 ```js
 const cardSort = (arr) => {
@@ -362,10 +362,10 @@ const cardSort = (arr) => {
 };
 ```
 
-The sort is comparing the first letters. `a` is 'the left' item in the array `b` is 'the
-right' item next to it. If a is less than b, swap the order. if a is greater than b, sort a before b. if a is equal to b - keep the order.
+The sort compares the first letters. `a` is 'the left' item in the array `b` is 'the
+right' item next to it. If a is less than b, swap the order. If a is greater than b, sort a before b. if a is equal to b - keep the order.
 
-Sort again, now we want to expand what happens when the suits match
+Sort again. Now we want to expand on what happens when the suits match.
 
 ```js
 const cardSort = (arr) => {
@@ -379,7 +379,7 @@ const cardSort = (arr) => {
 };
 ```
 
-The only time that the values will be the same/still not sorted correctly, now that we've sorted by suit, is when they are a Jack, Queen or King. Let's add the logic there
+The only time the values will be the same/still not sorted correctly, now that we've sorted by suit, is when they are a Jack, Queen, or King. Let's add the logic there.
 
 ```js
 const cardSort = (arr) => {

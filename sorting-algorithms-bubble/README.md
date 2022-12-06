@@ -14,8 +14,8 @@ const newArr = [...[1, 2, 3], ...[4, 5, 6]];
 
 <hr>
 
-What is the value of `color` for `newCar`
-What is the value of `color` for `secondNewCar`
+What is the value of `color` for `newCar`?
+What is the value of `color` for `secondNewCar`?
 
 ```js
 class Car {
@@ -32,9 +32,9 @@ const newCar = new Car("Porche", "Vintage Carrera", "Yellow");
 
 ## Main Problem
 
-Here we have our Deck of Cards class that has been simplified to generate cards that just have a numeric value. We can generate a deck of shuffled cards. We want to create a method that will put the cards back in order.
+Here we have our Deck of Cards class, simplified to generate cards with a numeric value. We can generate a deck of shuffled cards. We want to create a method that will put the cards back in order.
 
-Write your own `sort` method that sorts the cards from 2 - 11. Do not use the array method `.sort()`
+Write your own `sort` method that sorts the cards from 2 - 11. Do not use the array method `.sort()`.
 
 ```js
 class DeckOfCards {
@@ -93,4 +93,4 @@ console.log(deck);
 ## Lab: Accumulate Points on Code Wars & Practice with JavaScript's Sort Method
 
 - [Bubble Sort Once](https://www.codewars.com/kata/bubblesort-once)
-- [`.sort()` Practice](https://github.com/joinpursuit/m6-sorting-algos-practice) - please continue next session if not finished
+- [`.sort()` Practice](https://github.com/joinpursuit/m6-sorting-algos-practice) - Please continue next session if not finished
