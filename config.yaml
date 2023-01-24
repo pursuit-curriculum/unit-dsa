@@ -37,7 +37,7 @@ sequence:
       pursuit_path: dealing-w-errors
       kind: lesson
       activity: ~ # Codewars time
-    - name: Arrays and Callbacks Review Lab
+    - name: Arrays and Callbacks Review
       pursuit_path: arrays-and-callbacks
       kind: lesson
       activity: repository
