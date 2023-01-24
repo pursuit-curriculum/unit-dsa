@@ -116,17 +116,17 @@ sequence:
     - name: Mock Interview Trivia Questions
       elements:
         - kind: guide
-          pursuit_path: guide-mock-interviews
+          pursuit_path: mock-interviews
           pursuit_subpath: trivia-questions
     - name: Peer Mock Interviews
       elements:
         - kind: guide
-          pursuit_path: guide-mock-interviews
+          pursuit_path: mock-interviews
           pursuit_subpath: peer-mock-interviews
     - name: Discussion Questions for Mock Interviews
       elements:
         - kind: guide
-          pursuit_path: guide-mock-interviews
+          pursuit_path: mock-interviews
           pursuit_subpath: discussion-questions
     - name: End of Module Reflection
       elements:
