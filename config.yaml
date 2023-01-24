@@ -100,17 +100,17 @@ sequence:
     - name: Mock Interview 1
       kind: task
       activity: canvas_url
-      activity_description: "<p>Your instructor will schedule a time to do a mock interview with you.</p>
+      activity_description: "<p>Your instructor will schedule a time to do a mock interview with you.</p>"
       points_possible: 2
     - name: Mock Interview 2
       kind: task
       activity: canvas_url
-      activity_description: "<p>Your instructor will schedule a time to do a mock interview with you.</p>
+      activity_description: "<p>Your instructor will schedule a time to do a mock interview with you.</p>"
       points_possible: 2
     - name: Mock Interview 3
       kind: task
       activity: canvas_url
-      activity_description: "<p>Your instructor will schedule a time to do a mock interview with you.</p>
+      activity_description: "<p>Your instructor will schedule a time to do a mock interview with you.</p>"
       points_possible: 2
     # This resource is for instructors and students
     - name: Mock Interview Trivia Questions
