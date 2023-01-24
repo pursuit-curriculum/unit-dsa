@@ -11,7 +11,6 @@ sequence:
     - name: Introduction to Data Structures and Algorithms
       pursuit_path: intro-to-data-structures-and-algorithms
       kind: lesson
-      # did not work correctly opens in a new window wants to link to a repository
       activity: canvas_text
       activity_description: "Watch:
         <a href='https://www.youtube.com/watch?v=kiFfp-HAu64'>The Secret Rules of Modern Living Algorithms </a>
@@ -92,7 +91,7 @@ sequence:
       pursuit_path: code-wars
       kind: project
       activity: canvas_text
-      canvas_description:
+      activity_description:
         "You must gain an additional 150 points from your current score at the start of this unit.
         <a href='https://pursuit.codetrack.dev'>
         Pursuit Code Wars Tracker
@@ -117,18 +116,18 @@ sequence:
     - name: Mock Interview Trivia Questions
       elements:
         - kind: guide
-        - pursuit_path: mock-interviews
-        - pursuit_subpath: trivia-questions
+          pursuit_path: guide-mock-interviews
+          pursuit_subpath: trivia-questions
     - name: Peer Mock Interviews
       elements:
         - kind: guide
-        - pursuit_path: mock-interviews
-        - pursuit_subpath: peer-mock-interviews
+          pursuit_path: guide-mock-interviews
+          pursuit_subpath: peer-mock-interviews
     - name: Discussion Questions for Mock Interviews
       elements:
         - kind: guide
-        - pursuit_path: mock-interviews
-        - pursuit_subpath: discussion-questions
+          pursuit_path: guide-mock-interviews
+          pursuit_subpath: discussion-questions
     - name: End of Module Reflection
       elements:
         - kind: deck
