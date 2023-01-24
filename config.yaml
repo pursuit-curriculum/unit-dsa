@@ -9,7 +9,7 @@ sequence:
         - kind: deck
         - kind: recording
     - name: Introduction to Data Structures and Algorithms
-      pursuit_path: intro-to-algorithms
+      pursuit_path: intro-to-data-structures-and-algorithms
       kind: lesson
       # did not work correctly opens in a new window wants to link to a repository
       activity: canvas_text
@@ -99,32 +99,35 @@ sequence:
         </a>"
       points_possible: 150
     - name: Mock Interview 1
-      pursuit_path: mock-interviews
-      kind: assessment
-      activity: repository
+      kind: task
+      activity: canvas_url
+      activity_description: "<p>Your instructor will schedule a time to do a mock interview with you.</p>
+      points_possible: 2
     - name: Mock Interview 2
-      pursuit_path: mock-interviews
-      kind: assessment
-      activity: repository
+      kind: task
+      activity: canvas_url
+      activity_description: "<p>Your instructor will schedule a time to do a mock interview with you.</p>
+      points_possible: 2
     - name: Mock Interview 3
-      pursuit_path: mock-interviews
-      kind: assessment
-      activity: repository
+      kind: task
+      activity: canvas_url
+      activity_description: "<p>Your instructor will schedule a time to do a mock interview with you.</p>
+      points_possible: 2
     # This resource is for instructors and students
     - name: Mock Interview Trivia Questions
       elements:
         - kind: guide
-        - pursuit_path: guide-mock-interviews
+        - pursuit_path: mock-interviews
         - pursuit_subpath: trivia-questions
     - name: Peer Mock Interviews
       elements:
         - kind: guide
-        - pursuit_path: guide-mock-interviews
+        - pursuit_path: mock-interviews
         - pursuit_subpath: peer-mock-interviews
     - name: Discussion Questions for Mock Interviews
       elements:
         - kind: guide
-        - pursuit_path: guide-mock-interviews
+        - pursuit_path: mock-interviews
         - pursuit_subpath: discussion-questions
     - name: End of Module Reflection
       elements:
