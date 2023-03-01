@@ -1,200 +1,31 @@
-# Arrays and Callbacks
+# Arrays & Callbacks
 
-## Learning Objectives
+### Setting intent
 
-- Review array basics
-- Review array methods that take callbacks
-- Review reference types
+> You are enough
 
-## Naming Conventions
+The media focuses on being _the best_ and constantly highlights people who are _the best_. This can cause feelings and thoughts like 'If I am not going to be the best, what is the point?'
 
-Arrays are a `list` of items or a collection of items. Therefore, the name of the array should be descriptive and pluralized. In some other programming languages, arrays are called `lists`.
+What if we applied this to cooking? What if everyone who cooks just stopped cooking because they were not the best and they believed only the best people should cook? Our world would be a much sadder and emptier place.
 
-- items
-- numbers
-- words
-- products
+You don't have to be the best to make substantial positive contributions. You do have to strive to be good, thoughtful, and willing to learn from your mistakes. This will create a valuable contributor to whatever you work on and a welcome member of any team.
 
-When iterating over an array and selecting a single item, the single item should have a singular matching variable name.
+## Trivia Questions
 
-- item
-- number
-- word
-- product
-
-**GOOD**
-
-Notice the clarity of understanding of what is being iterated. It can be read out loud and reads almost like a sentence.
-
-```js
-for (let review of reviews)
-```
-
-**BAD**
-
-Notice the need for more clarity on what is being iterated. Reading this out loud does not help clarify what is happening (or is supposed to be happening).
-
-```js
-for (let x of review)
-
-for (let item of reviews)
-
-for (let z of y)
-```
-
-## Array iteration
-
-There are a few ways to iterate over an array.
-
-```js
-const nums = [1, 2, 3, 4, 5];
-```
-
-We can use a while loop:
-
-```js
-let i = 0;
-while (i < nums.length) {
-  console.log(nums[i]);
-  i++;
-}
-```
-
-We can use a for loop. The for loop is just like our while loop. However, it has a `control panel` that, on one line: Initiates a counter (the variable `i`) at a certain value, sets the end condition `i < nums.length`, and how to increment the loop `i++`. This format is often more readable and maintainable than a while loop.
-
-```js
-for (let i = 0; i < nums.length; i++) {
-  console.log(nums[i]);
-}
-```
-
-The `for` loop is very flexible. You can increment (`i++`), decrement (`i--`), skip by a certain amount (`i+=3`), or go back a step in the loop, if needed (we saw this with disemvowel trolls).
-
-But if your goal is to iterate over each item, you can use a `for of` loop for easier readability.
-
-In this control panel, you name a variable, and this will represent each item in the loop, one at a time, then `of`, which is a keyword, and finally, the variable/array/string that you want to loop over.
-
-```js
-for (let num of nums) {
-  console.log(num);
-}
-```
-
-We have two other ways to iterate over arrays. Both are array methods: `.forEach` and `.map`. The difference is that `.forEach` only iterates and does not return a value, and `.map` iterates and returns a new array.
-
-Let's take a look at both so we can compare and contrast the two methods.
-
-```js
-nums.forEach();
-```
-
-Here we are calling the function. It will iterate over each item, but we want it to do more. `.forEach()` is unopinionated about what you do. You can multiply by 10. You can change the numbers to strings or anything you can think of. But how do we tell `.forEach()` what we want to do?
-
-We will write a function inside:
-
-```js
-nums.forEach(() => {});
-```
-
-We will name the item to be iterated. Usually, arrays are given a plural name like `numbers`, `geese`, and `words`. When you iterate over the array (use one at a time, in order), the variable is named in the singular, for example: `number`, `goose`, `word`.
-
-```js
-nums.forEach((num) => {});
-```
-
-Let's multiply each number by 10
-
-```js
-nums.forEach((num) => {
-  console.log(num * 10);
-});
-```
-
-What if we wanted to store these values in a new array?
-
-```js
-const numsMulipliedByTen = nums.forEach((num) => {
-  console.log(num * 10);
-});
-
-console.log(numsMultipliedByTen);
-```
-
-We get undefined. Let's be sure to return a value:
-
-```js
-const numsMulipliedByTen = nums.forEach((num) => {
-  return num * 10;
-});
-
-console.log(numsMultipliedByTen);
-```
-
-Still undefined. This is because, by definition, `.forEach` does NOT return a new array. Let's use `.map` instead.
-
-```js
-const numsMulipliedByTen = nums.map((num) => {
-  return num * 10;
-});
-
-console.log(numsMultipliedByTen);
-```
-
-This is a very short function. It is just one line of code. With arrow functions, if our function is just one line of code, we can skip the curly braces and the keyword `return`.
-
-```js
-const numsMulipliedByTen = nums.map((num) => num * 10);
-
-console.log(numsMultipliedByTen);
-```
-
-Sometimes, you may see a function written like so (this syntax is a bit older):
-
-```js
-nums.forEach(function (num) {
-  console.log(num.toString() + 12);
-});
-```
-
-Notice we passed an `anonymous` function. It is a function without a name. We cannot reference it elsewhere. It only exists inside this `.map`. If we only use this function once, it is acceptable to keep it anonymous. However, if you have a function you use repeatedly, it may be better to define it separately and pass it in.
-
-```js
-const numToString = (num) => num.toString();
-const numsStringified = nums.map(numToString);
-
-console.log(numsStringified);
-```
-
-What we are working with are higher-order functions and callbacks.
-
-- The higher-order function is `.map`. It means it takes another function as an argument
-- The callback is `numToString`. The function goes in as an argument inside the higher-order function.
-
-MDN [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach), [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) - be sure to check out the docs. Both methods have additional parameters- the second will be the index position (if you need it), and the third can be an array. Although these are optional, they can come in to be very handy.
-
-## Other Useful Array Methods
-
-These methods are helpful, so they are worth practicing and studying.
-
-- `every`
-- `filter`
-- `find`
-- `findIndex`
-- `some`
-- `sort` Note: The second sorting algorithms lesson goes into more detail on this method.
-- `reduce` - [Note bonus self-guided lesson available](https://github.com/joinpursuit/m6-array-reduce)
-
-Rate your comfort using higher-order functions/array methods with callbacks out of 5.
-
-Taking the time to practice using these methods will help you hone your skills and better understand higher-order functions and callbacks. So then, you can focus on tackling more significant problems more efficiently. Gaining mastery with these will help you solve Codewars problems faster, show elegance and good understanding in code interviews, and help you write cleaner, more maintainable code.
+- What is the first index position of an array?
+- What is a primitive data type?
+- Is an array a primitive data type?
+- What is the difference between:
+  - `for (let i = 0; i < 5; i++)`
+  - `for (i = 0; i < 5; i++)`
 
 ## Find the Index in an Array
 
 Without using the `.indexOf` array method, write your own `findIndex` function.
 
-The function should find the index of a string or number from an array or string.
+The function should take an array and the string or number to be found.
 
-If the function finds the item, it should return the index position. If no matching item is found, the function should return -1. The function should only return the first index position if multiple matches exist.
+If the item is found, it should return the index position. If no matching item is found, it should return -1. If multiple matches exist, only the first index positions should be replaced.
 
 For example with the following array: `findIndex(letters, 'a')` should return 0. `findIndex(letters, 2)` should return -1.
 
@@ -230,99 +61,13 @@ const letters = [
 ];
 ```
 
-- Do we understand all the words stating this problem?
+## Drills
 
-- What are we asked to show?
-
-- Restate the problem in your own words
-
-- Is there enough information to find a solution?
-- Normally, we need to determine if it should be case-sensitive. In an interview, you would ask this clarifying question. Let's start with case-sensitive searches.
-
-- What is our plan?
-- loop over the array
-- What kind of loop should we use?
-- Are there some loops that are better than others?
-- compare whether the current item matches the one we are looking for
-- if it is a match, return the index position
-- if we have looped through all the items and there is no match, return `-1`.
-
-Let's think of some test cases:
-
-- `a` - should return 0
-- `f` - should return 5
-- `5` - should return -1
-
-Getting started:
-
-```js
-const findIndex = (arr, item) => {
-  return [arr, item];
-};
-
-console.log(findIndex(letters, "a"));
-```
-
-After testing the above, let's write a little more code to test:
-
-```js
-const findIndex = (arr, item) => {
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-  }
-  // return [arr, item];
-};
-
-console.log(findIndex(letters, "a"));
-```
-
-Sometimes, it is a good idea to console.log what your `if` statement will evaluate before writing it. Also, if your conditional statements don't work as expected, take the time to console log what you are evaluating.
-
-```js
-const findIndex = (arr, item) => {
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i], arr[i] === item);
-  }
-  // return [arr, item];
-};
-
-console.log(findIndex(letters, "a"));
-```
-
-That is working as expected! Let's swap the log for an `if` statement.
-
-```js
-const findIndex = (arr, item) => {
-  for (let i = 0; i < arr.length; i++) {
-    if ((arr[i], arr[i] === item)) {
-      return i;
-    }
-  }
-  return -1;
-};
-
-console.log(findIndex(letters, "a"));
-console.log(findIndex(letters, "f"));
-console.log(findIndex(letters, 5));
-```
-
-## Use .indexOf
-
-```js
-console.log(letters.indexOf("a"));
-console.log(letters.indexOf("f"));
-console.log(letters.indexOf(5));
-```
-
-#### Thought question
-
-If we had called our function `indexOf`, would it have caused a problem? Why or why not?
+[Practice array methods with callbacks](https://github.com/joinpursuit/array-method-drills)
 
 ## Loop the Loop
 
-You are given a two-dimensional array that is always made up of an even number of items in the outer and inner arrays. Find the greatest sum - whether it is across, up/down.
-
-Test case:
+Make a function that takes one argument, a two-dimensional array, where all the arrays are the same length, and returns the greatest sum of the numbers by row and column.
 
 ```js
 const arr = [
@@ -330,136 +75,34 @@ const arr = [
   [40, 50, 60],
   [70, -80, 90],
 ];
+
+greatestSum(arr); //180
 ```
 
-The plan
+Bonus - test for diagonal as well
 
-- sum the numbers of each row and compare them.
-- sum the numbers of each column and compare them.
-- compare all the sums and return the greatest sum
+### Find the Indexes of All in an Array
 
-```js
-const greatestSum = (arr) => {
-  return arr;
-};
+The same as finding the index. However, if there is more than one match, return an array of matching index positions.
 
-console.log(greatestSum(arr));
-```
+## Lab
 
-Rows
+### Part 1 
 
-```js
-const greatestSum = (arr) => {
-  for (let x = 0; x < arr.length; x++) {
-    console.log(arr[x]);
-  }
-};
+[Complete these drills and submit to canvas](https://github.com/joinpursuit/m6-array-method-drills)
 
-console.log(greatestSum(arr));
-```
+### Part 2  Accumulate Points on Codewars
 
-How do we access each number in a row? If we are not sure, we can do something simpler and try to access the first number.
+- [Gravity Flip](https://www.codewars.com/kata/5f70c883e10f9e0001c89673)
+- [Wrong Planet](https://www.codewars.com/kata/515e188a311df01cba000003)
+- [Needle in a Haystack](https://www.codewars.com/kata/56676e8fabd2d1ff3000000)
+- [Zoo Patrol](https://www.codewars.com/kata/5276c18121e20900c0000235)
+- [Sum Mixed Array](https://www.codewars.com/kata/sum-mixed-array)
+- [Array Flattener](https://www.codewars.com/kata/57ee99a16c8df7b02d00045f)
+- [Descending Order](https://www.codewars.com/kata/5467e4d82edf8bbf40000155?utm_source=newsletter)
+- [Beer Maid](https://www.codewars.com/kata/51e04f6b544cf3f6550000c1?utm_source=newsletter)
+- [Snail](https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1)
 
-```js
-const greatestSum = (arr) => {
-  for (let x = 0; x < arr.length; x++) {
-    console.log(arr[x][0]);
-  }
-};
-```
+### Part 3
 
-To increment the second number, we need to write a second loop.
-
-```js
-const greatestSum = (arr) => {
-  for (let x = 0; x < arr.length; x++) {
-    for (let y = 0; y < arr.length; y++) {
-      console.log(arr[x][y]);
-    }
-  }
-};
-```
-
-We will add each row and store each total in an array.
-
-Then we are going to find the maximum value.
-
-The first row should be 10 + 20 + 30 = 60
-The second row should be 40 + 50 + 60 = 150
-The third row should be 70 + -80 + 90 = 80
-
-```js
-const greatestSum = (arr) => {
-  const sums = [];
-  for (let x = 0; x < arr.length; x++) {
-    let sumR = 0;
-    for (let y = 0; y < arr.length; y++) {
-      sumR += arr[x][y];
-    }
-    sums.push(sumR);
-  }
-  return sums;
-};
-```
-
-Now, we need to sum up the columns.
-
-The first column should be 10 + 40 + 70 = 120
-The second column should be 20 + 50 + -80 = -10
-The third column should be 30 + 60 + 90 = 180
-
-Note - the third column is the greatest sum. By having a small and simple test case (as opposed to an array that is 20 x 20), we can calculate the expected results by hand.
-
-```js
-const greatestSum = (arr) => {
-  const sums = [];
-  for (let x = 0; x < arr.length; x++) {
-    let sumR = 0;
-    let sumC = 0;
-    for (let y = 0; y < arr.length; y++) {
-      sumR += arr[x][y];
-      sumC += arr[y][x];
-    }
-    sums.push(sumR);
-    sums.push(sumC);
-  }
-  return sums;
-};
-```
-
-Finally, let's get the maximum value.
-
-```js
-const greatestSum = (arr) => {
-  const sums = [];
-  for (let x = 0; x < arr.length; x++) {
-    let sumR = 0;
-    let sumC = 0;
-    for (let y = 0; y < arr.length; y++) {
-      sumR += arr[x][y];
-      sumC += arr[y][x];
-    }
-    sums.push(sumR);
-    sums.push(sumC);
-  }
-  return Math.max(...sums);
-};
-```
-
-## Array are Passed By Reference
-
-Arrays and objects are passed by reference. This is a handy thing to know and may explain the reason for certain bugs in your code when working with arrays. It will also become more relevant when we move into the topics of other data structures.
-
-[Arrays are passed by reference](./arrays-passed-by-reference.md)
-
-## Further Reading
-
-[Pursuit Reference Types](https://github.com/joinpursuit/8-0-technical-curriculum/tree/main/01-fundamentals/reference-types)
-
-Eloquent JavaScript
-
-[Chapter 4: Data Structures: Objects and Arrays](https://eloquentjavascript.net/04_data.html)
-
-## Reduce
-
-[Self-guided lesson and lab](https://github.com/joinpursuit/m6-array-reduce)
+[Self-guided lesson and lab on `.reduce()` method](https://github.com/joinpursuit/m6-array-reduce)
