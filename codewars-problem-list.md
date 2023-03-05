@@ -92,6 +92,7 @@ See assignment on Canvas.
 ### Codewars
 
 - [Be Concise](https://www.codewars.com/kata/5703c093022cd1aae90012c9)
+- [Recursive Replication](https://www.codewars.com/kata/57547f9182655569ab0008c4)
 - [Recursion Factorial](https://www.codewars.com/kata/5694cb0ec554589633000036)
 - [Sum of a Sequence](https://www.codewars.com/kata/586f6741c66d18c22800010a)
 - [Reverser](https://www.codewars.com/kata/58069e4cf3c13ef3a6000168)

@@ -30,13 +30,13 @@ This program has focused on building skills through project-based learning. When
 
 Technical interviews vary tremendously in what is expected. There are a few common styles, though:
 
-- White Boarding - when you are asked to write pseudocode/flow charts/other visuals to explain your thought process in solving a problem, you may write some code snippets (i.e., for loop, if/else), but you won't be writing full code.
-
 - Code Challenge - you are given a particular problem and asked to solve it in front of/with the people interviewing you. It is crucial to demonstrate your thought process by talking out loud/to your interviewer(s) about how you are solving the problem. It may be unimportant to solve the problem to pass - the interest can be geared towards giving you a challenging problem and seeing how you progress with it.
 
 - Project - you are given a **small** project (build a weather app that shows today's forecast) and given some time to complete it. Then you turn it in and talk through your code with the person/people interviewing you
 
 - Rapid Fire Trivia - this is usually over a phone screen where the interviewer asks you a bunch of trivia (is CSS case-sensitive? What is the difference between HTML and HTML5? Is JavaScript a dynamic language?).
+
+- Problem Solving - when you are asked to write pseudocode/flow charts/other visuals to explain your thought process in solving a problem, you may write some code snippets (i.e., for loop, if/else), but you won't be writing full code.
 
 **Note:** Be wary of projects requiring more than 1-2 days. You may be given a few days or a week, but the overall project should be small (no bigger than a module 1-4 project). Taking on projects that require a week or more of full-time++ work is not fair to your time and, anecdotally, doesn't lead to getting hired and could be taking advantage of your coding abilities.
 
