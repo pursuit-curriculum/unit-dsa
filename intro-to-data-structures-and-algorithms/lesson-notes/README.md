@@ -42,6 +42,3 @@ By the end of this lesson, you should be able to:
 
 > Five people were running a race. **A**iden finished before **B**rooke, but behind **C**ory. **D**esmond finished before **E**leanor, but behind **B**rooke. What was the finishing order?
 
-- Take a look at the following logic problem. Use Polya's Problem Solving Technique to help you solve this problem. Even if you think you know the answer, go through each step of the process.
-
-> A girl meets a snake and a deer in the forest. The snake lies every Monday, Tuesday, and Wednesday, and he speaks the truth the other days. The deer lies on Thursdays, Fridays, and Saturdays, and she speaks the truth on the other days of the week. “Yesterday I was lying,” the snake told the girl. “So was I,” said the deer. What day is it?
