@@ -31,7 +31,10 @@ Write a function that prints numbers in the Fibonacci sequence up to a given lim
 
 ## Lab: Accumulate Points on Codewars
 
-- [Be Concise](https://www.codewars.com/kata/5703c093022cd1aae90012c9)
+- [Recursive Replication](https://www.codewars.com/kata/57547f9182655569ab0008c4/javascript)
+- [Get Length of List Recursively](https://www.codewars.com/kata/57a83e447cb1f32de80000d5)
+- [Be Concise IV](https://www.codewars.com/kata/5703c093022cd1aae90012c9)
 - [Recursion Factorial](https://www.codewars.com/kata/5694cb0ec554589633000036)
 - [Sum of a Sequence](https://www.codewars.com/kata/586f6741c66d18c22800010a)
-- [Reverser](https://www.codewars.com/kata/58069e4cf3c13ef3a6000168)
+- [Recursion 101](https://www.codewars.com/kata/5b752a42b11814b09c00005d)
+
