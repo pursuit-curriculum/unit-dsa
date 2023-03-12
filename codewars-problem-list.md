@@ -91,11 +91,17 @@ See assignment on Canvas.
 
 ### Codewars
 
-- [Be Concise](https://www.codewars.com/kata/5703c093022cd1aae90012c9)
-- [Recursive Replication](https://www.codewars.com/kata/57547f9182655569ab0008c4)
-- [Recursion Factorial](https://www.codewars.com/kata/5694cb0ec554589633000036)
+- [Fibonacci](https://www.codewars.com/kata/569512b7707bc1b88200002f) - take the win!
+- [Recursive Replication](https://www.codewars.com/kata/57547f9182655569ab0008c4/javascript)
+- [Get Length of List Recursively](https://www.codewars.com/kata/57a83e447cb1f32de80000d5)
+- [Be Concise IV](https://www.codewars.com/kata/5703c093022cd1aae90012c9)
+- [Recursive Factorial](https://www.codewars.com/kata/5694cb0ec554589633000036)
 - [Sum of a Sequence](https://www.codewars.com/kata/586f6741c66d18c22800010a)
+- [Recursion 101](https://www.codewars.com/kata/5b752a42b11814b09c00005d)
+- [Magic Index](https://www.codewars.com/kata/57d5fed61a6282bf6f002a5f)
+- [Factorial Factory](https://www.codewars.com/kata/528e95af53dcdb40b5000171)
 - [Reverser](https://www.codewars.com/kata/58069e4cf3c13ef3a6000168)
+
 
 ## OOP fundamentals
 
