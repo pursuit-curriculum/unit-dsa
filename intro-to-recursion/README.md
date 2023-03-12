@@ -30,6 +30,7 @@ Write a function that prints numbers in the Fibonacci sequence up to a given lim
 - [Tribonacci Sequence on Code Wars](https://www.codewars.com/kata/556deca17c58da83c00002db)
 
 ## Lab: Accumulate Points on Codewars
+Sure you could solve most of these iteratively. But can you solve them using recursion? Solve as many as you can.
 
 - [Fibonacci - Codewars](https://www.codewars.com/kata/569512b7707bc1b88200002f) - take the win!
 - [Fibonacci - LeetCode](https://leetcode.com/problems/fibonacci-number/) - again take the win!

@@ -90,6 +90,7 @@ See assignment on Canvas.
 ## Intro to recursion
 
 ### Codewars
+Sure you could solve most of these iteratively. But can you solve them using recursion?
 
 - [Fibonacci - Codewars](https://www.codewars.com/kata/569512b7707bc1b88200002f) - take the win!
 - [Fibonacci - LeetCode](https://leetcode.com/problems/fibonacci-number/) - again take the win!
