@@ -37,4 +37,5 @@ Write a function that prints numbers in the Fibonacci sequence up to a given lim
 - [Recursion Factorial](https://www.codewars.com/kata/5694cb0ec554589633000036)
 - [Sum of a Sequence](https://www.codewars.com/kata/586f6741c66d18c22800010a)
 - [Recursion 101](https://www.codewars.com/kata/5b752a42b11814b09c00005d)
+- [Magic Index](https://www.codewars.com/kata/57d5fed61a6282bf6f002a5f)
 
