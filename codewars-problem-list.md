@@ -91,7 +91,8 @@ See assignment on Canvas.
 
 ### Codewars
 
-- [Fibonacci](https://www.codewars.com/kata/569512b7707bc1b88200002f) - take the win!
+- [Fibonacci - Codewars](https://www.codewars.com/kata/569512b7707bc1b88200002f) - take the win!
+- [Fibonacci - LeetCode](https://leetcode.com/problems/fibonacci-number/) - again take the win!
 - [Recursive Replication](https://www.codewars.com/kata/57547f9182655569ab0008c4/javascript)
 - [Get Length of List Recursively](https://www.codewars.com/kata/57a83e447cb1f32de80000d5)
 - [Be Concise IV](https://www.codewars.com/kata/5703c093022cd1aae90012c9)
@@ -101,7 +102,7 @@ See assignment on Canvas.
 - [Magic Index](https://www.codewars.com/kata/57d5fed61a6282bf6f002a5f)
 - [Factorial Factory](https://www.codewars.com/kata/528e95af53dcdb40b5000171)
 - [Reverser](https://www.codewars.com/kata/58069e4cf3c13ef3a6000168)
-
+- [Power Of Three](https://leetcode.com/problems/power-of-three/)
 
 ## OOP fundamentals
 
