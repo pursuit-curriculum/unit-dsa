@@ -269,6 +269,9 @@ You can return to the problem you had in the pre-reading and apply the same logi
 - Guess the middle number again
 - Repeat until the solution is found
 
+
+<details><summary>One possible solution</summary>
+
 ```js
 const gameVersion3 = (limit = 1000) => {
   let theNumber = Math.ceil(Math.random() * limit);
@@ -303,6 +306,11 @@ const gameVersion3 = (limit = 1000) => {
   );
 };
 ```
+
+
+
+</details>
+
 
 What is the Big O for this game?
 
