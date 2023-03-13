@@ -112,6 +112,7 @@ const loopTheLoop = (twoDArray) => {
 Create an `index.html` file and open it in your browser or copy/paste the JavaScript code into Chrome
 
 ```HTML
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -125,7 +126,8 @@ Create an `index.html` file and open it in your browser or copy/paste the JavaSc
 ```
 
 ```js
-const gameVersion1 = (limit = 100) => {
+const gameVersion1 = () => {
+  const limit = 100;
   let theNumber = Math.ceil(Math.random() * limit);
   let guess = prompt(`Guess a number between 1 and ${limit}`);
   let count = 0;
@@ -151,8 +153,6 @@ const gameVersion1 = (limit = 100) => {
     );
   }
 };
-
-gameVersion1();
 ```
 
 Play this game a few times. What is your method for finding the correct number?
