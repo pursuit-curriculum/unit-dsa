@@ -114,37 +114,45 @@ Create an `index.html` file and open it in your browser or copy/paste the JavaSc
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
- <head>
- <meta charset="UTF-8" />
- <title>Game</title>
- <script src="app.js"></script>
- </head>
- <body>
- <p>refresh the page to play again</p>
- </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Game</title>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <p>Refresh the page to play again</p>
+  </body>
 </html>
 ```
 
 ```js
-const game = () => {
+const gameVersion1 = () => {
   const limit = 100;
-  let number = Math.ceil(Math.random() * limit);
+  let theNumber = Math.ceil(Math.random() * limit);
   let guess = prompt(`Guess a number between 1 and ${limit}`);
-
+  let count = 0;
   guess = Number(guess);
 
-  while (guess !== number) {
-    if (guess < number) {
-      guess = prompt(`Too low! Guess again`);
+  while (guess !== theNumber && guess !== 0) {
+    console.log(guess);
+    if (guess < theNumber) {
+      guess = prompt(`Too low! Guess again!`);
     } else {
-      guess = prompt(`Too high! Guess again`);
+      guess = prompt(`Too high! Guess again!`);
     }
     guess = Number(guess);
+    count++;
   }
-  alert(`That's right! The number was ${number}`);
+  if (guess === 0) {
+    alert(
+      `You chose to quit. The number was ${theNumber}. Please play again soon!`
+    );
+  } else {
+    alert(
+      `That's right! The number was ${theNumber}. You made ${count} guesses`
+    );
+  }
 };
-
-game();
 ```
 
 Play this game a few times. What is your method for finding the correct number?
@@ -155,37 +163,29 @@ Now try to build an answer.
 
 Here is a naive coding solution. But it will always be the worst-case scenario - the last guess will always be the correct one. That means it would take a while if this guessing game were between 1 and 100 million.
 
-**Note:** - `alert`, `prompt`, and `confirm` are all browser-specific functions that will NOT work in `node`. They also `STOP` the code from running until the user does something. This means that the order of events can be a bit unexpected, don't worry about fixing it. This is for demonstration purposes only.
+**Note:** - Since this code guesses solutions for you, you can just run it in node, else open the dev console up in the browser. However, be sure to comment out gameVersion1.
 
 Now that the computer is guessing and we don't need user input, we'll use `console.log` instead.
 
 ```js
-const game = () => {
-  const limit = 100;
-  let number = Math.ceil(Math.random() * limit);
+const gameVersion2 = (limit = 100) => {
+  let theNumber = Math.ceil(Math.random() * limit);
 
-  guess = 0;
+  let guess = 0;
 
-  while (guess !== number) {
-    if (guess < number) {
-      guess = myAutomaticGuesser(guess, true);
+  while (guess !== theNumber) {
+    if (guess < theNumber) {
+      console.log(`Too low! Guess again!`);
+      guess++;
     } else {
-      guess = myAutomaticGuesser(guess, false);
+      console.log(`Too high! Guess again!`);
+      guess--;
     }
   }
-  console.log(`That's right! The number was ${number}`, guess);
+  console.log(
+    `That's right! The number was ${number}. The number of guesses was ${guess}`
+  );
 };
-
-const myAutomaticGuesser = (number, tooLow) => {
-  console.log(number);
-  if (tooLow) {
-    return ++number;
-  } else {
-    return --number;
-  }
-};
-
-game();
 ```
 
 How close is this solution to the one you used when trying it yourself? If it matched what you tried, can you think of another way?
