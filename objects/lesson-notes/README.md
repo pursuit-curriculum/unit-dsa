@@ -72,7 +72,8 @@ We can also see a list of keys with the `Object.getOwnPropertyNames()` function.
 const computerKeys = Object.getOwnPropertyNames(computer);
 
 console.log(computerKeys);
-//[ 'brand', 'weight', 'working', 'trackpad', 'condition', 'price' ]
+//[ 'brand', 'weight', 'working', 'trackpad', 'condition', 'price','powerUp',
+  'powerDown' ]
 ```
 
 We can then use a `for loop`.
