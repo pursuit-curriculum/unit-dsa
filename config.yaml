@@ -48,7 +48,18 @@ sequence:
     - name: Introduction to Big-O
       pursuit_path: intro-to-big-o
       kind: lesson
-      activity: ~ # Codewars time
+      activity: canvas_text
+      activity_description: "<p>What is the time complexity for the solutions provided to the following problems? Take a look at <a href='https://replit.com/@samshapland/find-time-complexity#index.js'>this replit </a> and determine the time complexity of each solution provided.
+      Click the button that says "Start Assignment" and fill out the text box below with your answers.
+      <ul>
+      <li>Disemvowel trolls (without Regex)</li>
+      <li> 2D Array Find Greatest Sum</li>
+      <li>Well of Ideas (Easy)</li>
+      <li> Find Sum up to n Version 1</li>
+      <li>Find Sum up to n Version 2</li>
+       <li>The Barksdale Code</li>
+      </ul>
+      </p>"
     - name: Introduction to Recursion
       pursuit_path: intro-to-recursion
       kind: lesson
