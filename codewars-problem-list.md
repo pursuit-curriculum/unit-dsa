@@ -104,6 +104,7 @@ Sure you could solve most of these iteratively. But can you solve them using rec
 - [Factorial Factory](https://www.codewars.com/kata/528e95af53dcdb40b5000171)
 - [Reverser](https://www.codewars.com/kata/58069e4cf3c13ef3a6000168)
 - [Power Of Three](https://leetcode.com/problems/power-of-three/)
+- [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 
 ## OOP fundamentals
 
