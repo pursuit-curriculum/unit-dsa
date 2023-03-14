@@ -2,14 +2,17 @@
 
 ## Learning Objectives
 
-- Introduction to Big O
-- Why do developers analyze Big O?
-- How to identify the Big O of a function
+- Explain why developers analyze Big O.
+- Describe what is Big O is.
+- Be able to calculate Big O of a function with the following types of notations:
+  - Constant O(1)
+  - Linear O(n)
+  - Quadratic O(n^2) or O(n\*m)
+  - Factorial O(n!)
+  - Logarithmic O(log n)
+- Analyze two functions that do the same thing.
 
 # Big O Notation
-
-![](https://i.imgur.com/AHLnEHd.png)
-image from: https://www.bigocheatsheet.com
 
 We are going to be introducing computer science concepts. These will suit you best for interviews and further into your career. Some of these concepts are rather complicated and will take time to come together for you. Don't worry if you don't get it right away. With time and practice, the pieces will come together.
 
@@ -17,11 +20,11 @@ Our focus has been on projects and skills first rather than focusing on theory. 
 
 What may be a little confusing is that we are going to start talking about optimization. But as you likely remember, one of the biggest pieces of advice we probably have been giving is: Don't optimize too early! This is still true for your work. Focus on building first and then the optimization.
 
-Still: what does optimization mean? We'll look at what it means through the lens of Big O in this lesson.
+Still, what does optimization mean? We'll look at what it means through the lens of Big O in this lesson.
 
 One of the things computer scientists are trained to do is to find ways to make things faster, smaller, cheaper, and more precise. One way to approach such problems is to consider the worst-case scenario.
 
-The worst case scenario is that whatever algorithm it will take the most amount of time possible. For example, if we are searching through an array, we assume that the item will always be found last and that the array size is enormous.
+The worst case scenario is that whichever algorithm is being analyzed, it will take the most amount of time possible. For example, if we are searching through an array, we assume that the item will always be found last and that the array size is enormous.
 
 Big O Notation is a way to denote the worst-case scenario. Similar notations indicate average and best-case scenarios, but we will not cover those today.
 
@@ -29,10 +32,10 @@ The name Big O comes from the math discipline and describes the relationship bet
 
 Big O of Algorithms is measured by:
 
-- **Time complexity** - the amount of time it takes to execute. It is measured in the number of steps an algorithm takes rather than measures of time, like seconds or minutes.
+- **Time complexity** - the amount of time it takes the function to complete. It is measured in the number of steps an algorithm takes rather than measures of time, like seconds or minutes.
 - **Space complexity** - the amount of memory (RAM) required for an algorithm to run.
 
-Each complexity can be described with a notation like O(n): Where n represents the number of elements.
+Each complexity can be described with a notation like `O(n)`: Where n represents the number of elements.
 
 Additionally, Big O can be represented visually with the execution time/memory on the y-axis and input size on the x-axis.
 
@@ -42,7 +45,7 @@ As the input size increases, the execution time can change based on the algorith
 
 For our introduction, we'll only consider time complexity and worst-case scenarios. In your studies, as you continue to learn, you should learn and consider space complexity and other scenarios as well.
 
-We will look at five classes of complexity.
+We will look at five classes of growth complexity. There are more, but these are the ones that appear most often.
 
 ### Set Up
 
@@ -106,7 +109,7 @@ const getFirstSongFromPlaylist = (album) => {
 };
 ```
 
-This algorithm has a Big O complexity of `constant`. No matter the array size, 1 or 1 million, this always takes the same time and memory to execute.
+This algorithm has a Big O complexity of `constant`. No matter the array size, 1 or 1 million, this always takes the same time and memory to execute. It does not matter if the Star Wars soundtrack has 1 song or a hundred million. The time it takes to complete this will be the same.
 
 This type of complexity is considered highly efficient.
 
@@ -114,12 +117,12 @@ This type of complexity is considered highly efficient.
 
 ### Linear `O(n)`
 
-"What songs are on the playlist of eponymous debuts?`
+"What songs are on the playlist of eponymous debuts?
 
 ```js
 const printSongs = (album) => {
-  for (let i = 0; i < album.length; i++) {
-    console.log(album[i]);
+  for (let n = 0; n < album.length; n++) {
+    console.log(album[n]);
   }
 };
 ```
@@ -132,42 +135,42 @@ This type of complexity is considered pretty good efficiency.
 
 ![](../assets/Linear.png)
 
-### Quadratic Complexity `O(n^2)` or `O(n*m)`
+### Quadratic Complexity `O(n*m)` or `O(n^2)`
 
 "List every song on all albums."
 
 ```js
 const PrintSongsWithinAlbums = (artist) => {
-  for (let i = 0; i < artist.albums.length; i++) {
-    for (let j = 0; j < artist.album.songs.length; j++) {
-      console.log(artist.album[i].songs[j]);
+  for (let n = 0; n < artist.albums.length; n++) {
+    for (let m = 0; m < artist.album.songs.length; m++) {
+      console.log(artist.album[n].songs[m]);
     }
   }
 };
 ```
 
-This algorithm has a Big O complexity of `quadratic`. For each added item to the array, the amount of time it takes to complete this is increased by n to the n power!
+This algorithm has a Big O complexity of `quadratic`. For each album added item to the array, the amount of time it takes to complete this is increased by `n` and for each song added the complexity is increased by `m`. For an increasing complexity of `n*m`. (or `n^2` if you are certain that `m` is always equal to `n`).
 
 Imagine you wanted to print every song by an artist. The above function would loop through each album and then, within each album, loop through each song. For each album, the complexity doesn't increase just by 1 step, but by each album times each song on the album.
 
-If every album has ten songs and 10 albums, we go through the steps 10 times for the albums and then times for each song, so for a collection of 10 albums, we go through the algorithm 100 times. If we had 100 albums and still 10 songs, we'd go through this algorithm 1000 times.
+If every artist has 10 albums and each album has 10 songs, we go through the steps 10 times for the albums and then times for each song, so for a collection of 10 albums, we go through the algorithm 100 times. If we had 100 albums and still 10 songs, we'd go through this algorithm 1000 times. When calculating Big O, we assume that every artist will continue to increase the number of albums and albums per song.
 
-If we were also to have to go through artists, and now every artist has 10 albums, and each album has 10 songs, the number of steps we have to take increases quite quickly!
+If we were also to have to go through all of the artists, and now every artist has 10 albums, and each album has 10 songs, the number of steps we have to take increases quite quickly!
 
 More complexity:
 
 ```js
 const PrintSongsWithinAlbumsByArtist = () => {
-  for (let i = 0; i < artists.length; i++) {
-    for (let j = 0; j < artists[i].albums.length; j++) {
-      for (let k = 0; k < artists[i].album[j].songs.length; k++) {
-        console.log(artists[i].albums[j].songs[k]);
+  for (let n = 0; n < artists.length; n++) {
+    for (let m = 0; m < artists[n].albums.length; m++) {
+      for (let k = 0; k < artists[n].album[m].songs.length; k++) {
+        console.log(artists[n].albums[m].songs[k]);
       }
     }
   }
 };
 
-// Alternative syntax
+// Alternative syntax to help with readability
 for (let artist of artists) {
   for (let albums of artist.albums) {
     for (let songs of album.songs) {
@@ -177,11 +180,34 @@ for (let artist of artists) {
 }
 ```
 
-Now we have a collection of artists, as we gain each artist with 10 albums and then 10 songs per album. We get 10 songs and 10 albums each time we add an artist. With 10 artists, we get 10 x 10 x 10 = 1000 steps.
+Now we have a collection of artists, as we gain each artist with 10 albums and then 10 songs per album. We get 10 songs and 10 albums each time we add an artist. With 10 artists, we get 10 x 10 x 10 = 1000 steps or `O(n * m * k)`
 
-This type of complexity is considered inefficient. It is also important to note that there isn't a more efficient way for this particular ask. We want every single song! That's ok.
+> **Note:** You don't have to stick with `n` or `m`. You can name these variables in a more semantic way. You can write `O(artists * albums * songs)` and still identify this as `quadratic`. Using more semantic naming can be helpful.
+
+This type of complexity is considered inefficient. It is also important to note that there isn't a more efficient way for this particular ask. We want every single song! Not every other song, not a random selection of 10. And that that's ok.
 
 ![](../assets/Quadratic.png)
+
+If you need better speed/efficiency but can't change from a triple nested loop, What else can you do to make things go faster? What you could consider is adding functionality where the user only sees the first 100 songs and must scroll or push a button to get more. Or choosing not to load all of the artwork right away.
+
+### Factorial Complexity `O(n!)`
+
+"Play the album Hamilton, over and over again until I've heard every song in every order possible."
+
+Factorial means the product of all positive integers less than or equal to n.
+
+Examples
+
+- 3 factorial is 3 x 2 x 1
+- 7 factorial is 7 x 6 x 5 x 4 x 3 x 2 x 1
+
+The complexity of the factorial algorithm increases faster than in any other example. While there are real-world examples of these types of algorithms, due to their complexity, they are not typically asked in coding interviews for jr positions, and thus we won't include an code example here.
+
+This type of complexity is considered inefficient.
+
+![](../assets/Factorial.png)
+
+You can [read about an inefficient sorting algorithm called Bogosort that has a factorial run time](https://en.wikipedia.org/wiki/Bogosort) if you want a more in-depth example. Typically factorial complexity algorithms come up in terms of permutations or creating combinations of things.
 
 ### Logarithmic Complexity `O(log(n))`
 
@@ -235,24 +261,60 @@ This type of complexity is considered highly efficient. But notice it is not ver
 
 Now that we found the artist, we can do something similar to find the song.
 
-### Factorial Complexity `O(n!)`
+You can return to the problem you had in the pre-reading and apply the same logic.
 
-"Play the album Hamilton, over and over again until I've heard every song in every order possible."
+- First guess the middle number
+- Check if it is too big or small
+- Adjust the bounds/limits for the range
+- Guess the middle number again
+- Repeat until the solution is found
 
-Factorial means the product of all positive integers less than or equal to n.
 
-Examples
+<details><summary>One possible solution</summary>
 
-- 3 factorial is 3 x 2 x 1
-- 7 factorial is 7 x 6 x 5 x 4 x 3 x 2 x 1
+```js
+const gameVersion3 = (limit = 1000) => {
+  let theNumber = Math.ceil(Math.random() * limit);
 
-The complexity of the factorial algorithm increases faster than in any other example. While there are real-world examples of these types of algorithms, due to their complexity, they are not typically asked in coding interviews for jr positions, and thus we won't include an example.
+  guess = Math.floor(limit / 2);
+  let count = 1;
+  // start with a lower bound
+  let lowerBound = 0;
 
-This type of complexity is considered inefficient.
+  while (guess !== theNumber && count < 10) {
+    if (guess < theNumber) {
+      console.log(`Too low! Guess again!`);
+      // limit is still the limit
+      // lowerBound is now guess
+      lowerBound = guess;
+      // guess is Math.floor(limit - lowerBound)
+      guess = Math.floor((limit - lowerBound) / 2) + lowerBound;
+      //   console.log("new guess", guess);
+    } else {
+      console.log(`Too high! Guess again!`);
+      // limit is now guess
+      limit = guess;
+      // lowerBound is still lowerBound
+      // guess is Math.floor(limit - lowerBound)
+      guess = Math.floor((limit - lowerBound) / 2) + lowerBound;
+      //   console.log("new guess", guess);
+    }
+    count++;
+  }
+  console.log(
+    `That's right! The number was ${theNumber}. The number of guesses was ${count}`
+  );
+};
+```
 
-![](../assets/Factorial.png)
 
-You can [read about an inefficient sorting algorithm called Bogosort that has a factorial run time](https://en.wikipedia.org/wiki/Bogosort)
+
+</details>
+
+
+What is the Big O for this game?
+
+If the number range is 1 - 1000, how likely is it that you will be able to guess the correct number in 10 guesses or less?
 
 ## Summary
 
@@ -275,12 +337,6 @@ then do it better
 ```
 
 Again focusing on just solving your problem first and foremost. Then going and finding the right way to do it and, finally, find ways to do it better.
-
-## Next
-
-Do you feel like you need to hear it all again?
-
-Here is a compilation of videos and resources [Code Chef](https://www.codechef.com/certification/data-structures-and-algorithms/prepare)
 
 ## More Considerations
 
@@ -344,7 +400,9 @@ O(2N)
 
 </details>
 
-The rate always increases by the number of elements: `N`, the 2 is a constant. We don't need constants - therefore, for both of these examples, Big O is O(N)
+The rate always increases by the number of elements: `N`, the 2 is a constant. We don't need constants - therefore, for both of these examples, Big O is O(N).
+
+This also means that when loops are not nested, you add the values. You do not multiply them as if they were nested.
 
 ### Drop Non-Dominant Terms
 
@@ -403,6 +461,34 @@ We will multiply when the loops are nested.
 
 O(N\*M)
 
+### Dealing with Ambiguity
+
+```js
+function first(array) {
+  for (let item of array) {
+    someFunc1(item);
+  }
+}
+
+function second(array) {
+  for (let item of array) {
+    someFunc2(item);
+  }
+}
+```
+
+In this case there are two similar functions that seem to have a linear runtime.
+
+However, you don’t know the runtime of someFunc1 or someFunc2. Therefore the runtime may or may not be comparable.
+
+If you notice ambiguity it is ok to call it out.
+
+## Next
+
+Do you feel like you need to hear it all again?
+
+Here is a compilation of videos and resources [Code Chef](https://www.codechef.com/certification/data-structures-and-algorithms/prepare)
+
 ## Further Reading
 
 [Gayle Laakman McDowell Big O Crash Course for Uber](https://s3.amazonaws.com/ubercandidateprep/videos/05_Big_O_Crash_Course.mp4)
@@ -411,7 +497,60 @@ O(N\*M)
 
 ## Bonus
 
-<details><summary>A possible solution for the game/automatic guesser that follows a binary search</summary>
+### Prime numbers
+
+What is the Big O for the following:
+
+```js
+const isPrime = (num) => {
+  if (num < 2) {
+    return false;
+  } else if (num === 2) {
+    return true;
+  } else {
+    for (let i = 2; i < num; i++) {
+      if (num % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+};
+
+console.log(printPrimes(30));
+```
+
+Compared with:
+
+```js
+const isPrime = (num) => {
+  if (num < 2) {
+    return false;
+  } else if (num === 2) {
+    return true;
+  } else {
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+      if (num % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+};
+
+console.log(printPrimes(30));
+```
+
+<details><summary>Answer</summary>
+The first one has a Big O of O(n)
+
+The second one has a Big of of O(n^ 0.5)
+
+</details>
+
+### Binary Search Guessing Game alternative syntax/solution
+
+<details><summary>A possible alternative solution for the game/automatic guesser that has more similar syntax to the example binary search code given.</summary>
 
 ```js
 const game = () => {
