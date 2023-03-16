@@ -327,7 +327,7 @@ class Animal {
   constructor(name, type, color, walkStyle, isFriendly = true) {
     this.name = name;
     this._type = type;
-    this.age = 4;
+    this._age = 4;
     this.color = color;
     this.isFriendly = isFriendly;
     this.walkStyle = walkStyle || "Walka, walka";
@@ -339,7 +339,7 @@ class Animal {
     console.log(`Sniff sniff, ${otherBeing}`);
   }
   ageUp() {
-    this.age++;
+    this._age++;
   }
 }
 const buttons = new Animal("Buttons", "turtle", "green");
@@ -362,7 +362,7 @@ class Animal {
   constructor(name, type, color, walkStyle, isFriendly = true) {
     this.name = name;
     this._type = type;
-    this.age = 4;
+    this._age = 4;
     this.color = color;
     this.isFriendly = isFriendly;
     this.walkStyle = walkStyle || "Walka, walka";
@@ -377,7 +377,7 @@ class Animal {
     console.log(`Howdy ${otherClassyBeing.name}`);
   }
   ageUp() {
-    this.age++;
+    this._age++;
   }
 }
 const buttons = new Animal("Buttons", "turtle", "green");
