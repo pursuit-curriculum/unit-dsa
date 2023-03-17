@@ -154,7 +154,7 @@ Let's think back to our example of creating a deck of cards for the game BlackJa
 ```js
 class DeckOfCards {
   constructor() {
-    this.deck = [];
+    this.cards = [];
     this.createDeck();
   }
   createDeck() {
@@ -225,16 +225,23 @@ class DeckOfCards {
   }
   createDeck() {
     for (let i = 1; i <= 13; i++) {
-      if (i === 1) {
-        this.cards.push(new Card("Ace", i, "hearts"));
-      } else if (i === 11) {
-        this.cards.push(new Card("Jack", 10, "hearts"));
-      } else if (i === 12) {
-        this.cards.push(new Card("Queen", 10, "hearts"));
-      } else if (i === 13) {
-        this.cards.push(new Card("King", 10, "hearts"));
-      } else {
-        this.cards.push(new Card(i, i, "hearts"));
+      for (let i = 1; i <= 13; i++) {
+        let face = i;
+        let suit = "hearts";
+        let value = i;
+        if (i === 1) {
+          face = "Ace";
+        } else if (i === 11) {
+          face = "Jack";
+          value = 10;
+        } else if (i === 12) {
+          face = "Queen";
+          value = 10;
+        } else if (i == 13) {
+          face = "King";
+          value = 10;
+        }
+        this.cards.push(new Card(face, value, "Hearts"));
       }
     }
   }
@@ -259,17 +266,22 @@ class DeckOfCards {
     const suits = ["Hearts", "Diamonds", "Clubs", "Spades"];
     for (let j = 0; j < suits.length; j++) {
       for (let i = 1; i <= 13; i++) {
+        let face = i;
+        let suit = "hearts";
+        let value = i;
         if (i === 1) {
-          this.cards.push(new Card("Ace", i, suits[j]));
+          face = "Ace";
         } else if (i === 11) {
-          this.cards.push(new Card("Jack", 10, suits[j]));
+          face = "Jack";
+          value = 10;
         } else if (i === 12) {
-          this.cards.push(new Card("Queen", 10, suits[j]));
-        } else if (i === 13) {
-          this.cards.push(new Card("King", 10, suits[j]));
-        } else {
-          this.cards.push(new Card(i, i, suits[j]));
+          face = "Queen";
+          value = 10;
+        } else if (i == 13) {
+          face = "King";
+          value = 10;
         }
+        this.cards.push(new Card(face, value, suits[j]));
       }
     }
   }
@@ -295,22 +307,28 @@ class DeckOfCards {
     this.shuffle(this.cards);
   }
   createDeck() {
-    const suits = ["Hearts", "Diamonds", "Clubs", "Spades"];
+   const suits = ["Hearts", "Diamonds", "Clubs", "Spades"];
     for (let j = 0; j < suits.length; j++) {
       for (let i = 1; i <= 13; i++) {
+        let face = i;
+        let suit = "hearts";
+        let value = i;
         if (i === 1) {
-          this.cards.push(new Card("Ace", 11, suits[j]));
+          face = "Ace";
         } else if (i === 11) {
-          this.cards.push(new Card("Jack", 10, suits[j]));
+          face = "Jack";
+          value = 10;
         } else if (i === 12) {
-          this.cards.push(new Card("Queen", 10, suits[j]));
-        } else if (i === 13) {
-          this.cards.push(new Card("King", 10, suits[j]));
-        } else {
-          this.cards.push(new Card(i, i, suits[j]));
+          face = "Queen";
+          value = 10;
+        } else if (i == 13) {
+          face = "King";
+          value = 10;
         }
+        this.cards.push(new Card(face, value, suits[j]));
       }
     }
+  }
   }
   shuffle(array) {
     let m = array.length;
