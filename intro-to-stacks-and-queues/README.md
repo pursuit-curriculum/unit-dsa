@@ -61,7 +61,7 @@ Now that we understand the general principles of these two data structures, the 
 
 ## Lab
 
-[Stacks and Queues Lab](https://github.com/joinpursuit/m6-stacks-queues-practice)
+[Stacks and Queues Lab](https://github.com/9-2-pursuit/lab-intro-to-stacks-and-queues)
 
 ### Bonus
 
