@@ -93,4 +93,4 @@ console.log(deck);
 ## Lab: Accumulate Points on Code Wars & Practice with JavaScript's Sort Method
 
 - [Bubble Sort Once](https://www.codewars.com/kata/bubblesort-once)
-- [`.sort()` Practice](https://github.com/joinpursuit/m6-sorting-algos-practice) - Please continue next session if not finished
+- [`.sort()` Practice](https://github.com/9-1-pursuit/lab-sorting-algorithms-merge) - Please continue next session if not finished
