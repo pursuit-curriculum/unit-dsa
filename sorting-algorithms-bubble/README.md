@@ -27,7 +27,7 @@ class Car {
 }
 
 const newCar = new Car("Mazda", "MX-30");
-const newCar = new Car("Porche", "Vintage Carrera", "Yellow");
+const secondNewCar = new Car("Porche", "Vintage Carrera", "Yellow");
 ```
 
 ## Main Problem
