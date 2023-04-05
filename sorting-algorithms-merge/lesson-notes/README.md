@@ -55,7 +55,7 @@ const sortedArray = [];
 By comparing the first values in the array
 
 - if `left[0] < right[0]`
-- remove `[left][0]` from the array and put it into the sorted array
+- remove `left[0]` from the array and put it into the sorted array
 - if `left[0] > right[0]` OR `left[0]===right[0]`
 - remove `right[0]` from the array and put it into the sorted array
 
