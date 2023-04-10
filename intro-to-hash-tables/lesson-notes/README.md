@@ -342,7 +342,7 @@ Coding to `get`, `set` and removing these values requires more logic. You can fo
 
 [JavaScript now has a built-in Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
-Generally, it is OK to use a regular JavaScript object unless you have a good reason to use a map.
+Generally, it is OK to use a regular JavaScript object unless you have a good reason to use a `Map` object.
 
 Notice how you get and set values is different than using a regular JavaScript object.
 
