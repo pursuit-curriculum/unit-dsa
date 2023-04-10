@@ -40,7 +40,7 @@ This time `hello, world` becomes `Uryyb, jbeyq`.
 Here is something closer to what you may see if you work on authentication/password encryption in your coding. This is the result of a hashing function called [`bcrypt`](https://en.wikipedia.org/wiki/Bcrypt)
 
 ```js
-const password = "password1234";
+const password = 'password1234';
 
 let hashedPassword = encrypt(password);
 
@@ -54,7 +54,7 @@ Hashing functions used in production are very complex and sophisticated. They ar
 
 ### Hash Table and Associated Terms
 
-Across compting languages, there can be a different names for the same (or very similar things). For example, we learned earlier that what JavaScript coders call an `array` in Python is often referred to as a `list`.
+Across computing languages, there can be a different names for the same (or very similar things). For example, we learned earlier that what JavaScript coders call an `array` in Python is often referred to as a `list`.
 
 Let's look at some more similar, yet sometimes different, terminology.
 
@@ -162,10 +162,10 @@ Let's test out this function.
 ```js
 const hashTable = new HashTable();
 
-console.log(hashTable.hash("a")); // 97
-console.log(hashTable.hash("b")); // 98
-console.log(hashTable.hash("z")); // 122
-console.log(hashTable.hash("Zugzwang")); // 85
+console.log(hashTable.hash('a')); // 97
+console.log(hashTable.hash('b')); // 98
+console.log(hashTable.hash('z')); // 122
+console.log(hashTable.hash('Zugzwang')); // 85
 ```
 
 The usefulness of this hash function on its own is not helpful. Someone interacting with our hash table should not have to use this alone. Therefore, it should be a private method used only inside the hash table. In JavaScript, we cannot (yet) make a method truly private. We can still mark it as private by changing the function name to have an underscore at the start.
@@ -178,7 +178,6 @@ class HashTable {
   _hash(key) {
     let hash = 0;
     for (let char of key) {
-      log(char);
       hash += key.charCodeAt(char);
     }
     return hash % this.table.length;
@@ -208,7 +207,7 @@ class HashTable {
 }
 
 hashTable.set(
-  "zugzwang",
+  'zugzwang',
   `(in chess), a situation in which the obligation to make a move in one's turn is a serious, often decisive, disadvantage.`
 );
 ```
@@ -236,12 +235,12 @@ Let's add a couple more words.
 
 ```js
 hashTable.set(
-  "kerfuffle",
+  'kerfuffle',
   `a fuss, especially one caused by conflicting views.`
 );
 
 hashTable.set(
-  "whipsawed",
+  'whipsawed',
   `subject to two difficult situations or opposing pressures at the same time.`
 );
 
@@ -308,16 +307,16 @@ We have 127 array positions. If we are trying to store an English language dicti
 **Note:** if we were to update the definition of `zugzwang`, we should be OK to use `set`.
 
 ```js
-hashTable.set("zugzwang", `an updated definition`);
+hashTable.set('zugzwang', `an updated definition`);
 
-console.log(hashTable.get("zugzwang"));
+console.log(hashTable.get('zugzwang'));
 ```
 
 Here is another word/key that will have a hash value the same as `zugzwang`:
 
 ```js
-console.log(hashTable._hash("zugzwang")); // 87
-console.log(hashTable._hash("watch")); // 87
+console.log(hashTable._hash('zugzwang')); // 87
+console.log(hashTable._hash('watch')); // 87
 ```
 
 What do we do?
@@ -330,8 +329,8 @@ In terms of code, it would look like
 
 ```js
 this.table[index] = [
-  ["zugzwang", "some definition for zugzwang"],
-  ["watch", "some definition for watch"],
+  ['zugzwang', 'some definition for zugzwang'],
+  ['watch', 'some definition for watch']
 ];
 ```
 
@@ -364,16 +363,16 @@ Regardless if your class came to a conclusion that a hash map would be the best 
 
 ```js
 const animals = [
-  "otter",
-  "dog",
-  "dog",
-  "dog",
-  "parakeet",
-  "woodchuck",
-  "cat",
-  "tardigrade",
-  "dog",
-  "cat",
+  'otter',
+  'dog',
+  'dog',
+  'dog',
+  'parakeet',
+  'woodchuck',
+  'cat',
+  'tardigrade',
+  'dog',
+  'cat'
 ];
 
 const uniqueArray = (arr) => {
@@ -434,7 +433,7 @@ const uniqueArray = (arr) => {
     }
   }
   console.log(map);
-  console.log(map["dog"]);
+  console.log(map['dog']);
   return unique;
 };
 ```
