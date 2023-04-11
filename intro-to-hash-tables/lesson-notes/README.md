@@ -452,7 +452,7 @@ Feedback from many employers is that they are not typically impressed by watchin
 
 Employers prefer to see someone demonstrate strong foundations within the language(s)/frameworks that they have been learning/studying.
 
-So be sure you know your foundations so you can keep growing in a way that will align with your career growth. It is OK to go back to old material/concepts and get stronger. Should you need to learn a new language or framework, you'll find that your foundations will help you understand new things faster and better.
+So be sure you know and continue to review your foundations so you can keep growing in a way that will align with your career growth. It is OK to go back to old material/concepts and get stronger. Should you need to learn a new language or framework, you'll find that your foundations will help you understand new things faster and better.
 
 - [Pursuit Module 5](https://github.com/joinpursuit/Pursuit-Core-Web/tree/master/data-structures-%26-algorithms#labs-and-lessons) - don't be afraid to start again and go through the material again. Sometimes novelty in learning is beneficial, but so is going back and spending time with the material again.
 
