@@ -468,6 +468,6 @@ Finally, the best way to learn is to code. Keep making projects. They don't have
 
 You should have at least one showcase personal project that you are ready to show to employers: It should start very simple, look nice in terms of CSS/UX/UI, and can be quite small in scope (a single model grocery list app). Once you have built a nice version 1, you can either try a new project that is a bit more complex or continue to build on top of your current project.
 
-But you should also just be building things that grab your interest or want to lean into your discomfort with a topic so you can level up.
+But you should also just be building things that grab your interest or push you to lean into your discomfort with a topic so you can level up.
 
 Happy coding!
