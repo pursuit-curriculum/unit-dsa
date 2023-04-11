@@ -442,7 +442,7 @@ const uniqueArray = (arr) => {
 
 Strong foundations are more important than a shaky understanding of a wider breadth of topics.
 
-Our program has been a survey course where we have covered a wide breadth of topics. Each module could have easily been a year long.
+Our program has been a course where we have covered a wide breadth of topics. Each module could have easily been a year long.
 
 Before entering this program, it is possible that you did not know what a server or database was. You needed exposure to the core concepts of full-stack web development so you could know what questions to ask and what to learn next.
 
