@@ -1,7 +1,7 @@
+---
 details:
   name: Data Structures and Algorithms
   repository_name: unit-dsa
-
 sequence:
   Algorithm Fundamentals:
     - name: Unit 5 Launch
@@ -12,31 +12,30 @@ sequence:
       pursuit_path: intro-to-data-structures-and-algorithms
       kind: lesson
       activity: canvas_text
-      activity_description: "Watch:
-        <a href='https://www.youtube.com/watch?v=kiFfp-HAu64'>The Secret Rules of Modern Living Algorithms </a>
-        <h5>And answer the following questions on Canvas:</h5>
-        <ol>
-        <li> Describe the algorithm to win the chocolate, and not the chili</li>
-        <li> Name 2 types of sorting algorithms discussed in the video</li>
-        <li> Name the algorithm used to help find matches for people who needed a kidney?</li>
-        <li> What animal deals with the Traveling Salesman problem in its daily life?</li>
-        <ol>"
+      activity_description: "Watch: <a
+        href='https://www.youtube.com/watch?v=kiFfp-HAu64'>The Secret Rules of
+        Modern Living Algorithms </a> <h5>And answer the following questions on
+        Canvas:</h5> <ol> <li> Describe the algorithm to win the chocolate, and
+        not the chili</li> <li> Name 2 types of sorting algorithms discussed in
+        the video</li> <li> Name the algorithm used to help find matches for
+        people who needed a kidney?</li> <li> What animal deals with the
+        Traveling Salesman problem in its daily life?</li> <ol>"
     - name: Control Flow Review
       pursuit_path: control-flow
       kind: lesson
-      activity: ~ # Codewars time
+      activity: null
     - name: Math for Developers
       pursuit_path: math-for-devs
       kind: lesson
-      activity: ~ # Codewars time
+      activity: null
     - name: Strings Review
       pursuit_path: strings
       kind: lesson
-      activity: ~ # Codewars time
+      activity: null
     - name: Dealing with Errors
       pursuit_path: dealing-w-errors
       kind: lesson
-      activity: ~ # Codewars time
+      activity: null
     - name: Arrays and Callbacks Review
       pursuit_path: arrays-and-callbacks
       kind: lesson
@@ -44,19 +43,19 @@ sequence:
     - name: Objects Review
       pursuit_path: objects
       kind: lesson
-      activity: ~ # Codewars time
+      activity: null
     - name: Introduction to Big-O
       pursuit_path: intro-to-big-o
       kind: lesson
-      activity: ~ # Codewars time
+      activity: null
     - name: Introduction to Recursion
       pursuit_path: intro-to-recursion
       kind: lesson
-      activity: ~ # Codewars time
+      activity: null
     - name: Introduction to Object Oriented Programming
       pursuit_path: intro-to-oop
       kind: lesson
-      activity: ~ # Codewars time
+      activity: null
     - name: Introduction to OOP - Inheritance
       pursuit_path: intro-to-oop-inheritance
       kind: lesson
@@ -77,7 +76,7 @@ sequence:
     - name: Sorting Algorithms - Bubble Sort
       pursuit_path: sorting-algorithms-bubble
       kind: lesson
-      activity: ~ # Codewars time
+      activity: null
     - name: Sorting Algorithms - Merge Sort
       pursuit_path: sorting-algorithms-merge
       kind: lesson
@@ -85,34 +84,35 @@ sequence:
     - name: Introduction to Hash Tables
       pursuit_path: intro-to-hash-tables
       kind: lesson
-      activity: ~
+      activity: null
   Projects and Assessments:
     - name: Code Wars
       pursuit_path: code-wars
       kind: project
       activity: canvas_text
       activity_description:
-        "You must gain an additional 150 points from your current score at the start of this unit.
-        <a href='https://pursuit.codetrack.dev'>
-        Pursuit Code Wars Tracker
-        </a>"
+        You must gain an additional 150 points from your current
+        score at the start of this unit. <a
+        href='https://pursuit.codetrack.dev'> Pursuit Code Wars Tracker </a>
       points_possible: 150
     - name: Mock Interview 1
       kind: task
       activity: canvas_url
-      activity_description: "<p>Your instructor will schedule a time to do a mock interview with you.</p>"
+      activity_description: <p>Your instructor will schedule a time to do a mock
+        interview with you.</p>
       points_possible: 2
     - name: Mock Interview 2
       kind: task
       activity: canvas_url
-      activity_description: "<p>Your instructor will schedule a time to do a mock interview with you.</p>"
+      activity_description: <p>Your instructor will schedule a time to do a mock
+        interview with you.</p>
       points_possible: 2
     - name: Mock Interview 3
       kind: task
       activity: canvas_url
-      activity_description: "<p>Your instructor will schedule a time to do a mock interview with you.</p>"
+      activity_description: <p>Your instructor will schedule a time to do a mock
+        interview with you.</p>
       points_possible: 2
-    # This resource is for instructors and students
     - name: Mock Interview Trivia Questions
       elements:
         - kind: guide
