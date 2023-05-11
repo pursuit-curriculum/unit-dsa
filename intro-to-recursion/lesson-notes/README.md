@@ -16,7 +16,7 @@ A recursive function calls itself to reduce a larger problem into a smaller one 
 A recursive function must have two properties:
 
 - A simple base case (or cases) - which is a terminating scenario that does not use recursion to produce an answer
-- A set of rules that reduce all other cases toward the base case
+- The inductive step - A set of rules that reduce all other cases toward the base case
 
 Recursion is not yet in our coding tool kit. Solving things recursively takes practice and may feel quite odd at first.
 
@@ -222,9 +222,9 @@ Fibonacci is a classic problem that shows up as examples in coding or as a probl
 Write a function that prints the nth number in the Fibonacci sequence:
 
 - `fibonacci(5)`
-- 1, 1, 2, 3, **5**
+- 0, 1, 1, 2, 3, **5**
 - `fibonacci(8)`
-- 1, 1, 2, 3, 5, 8, 13, **21**
+- 0, 1, 1, 2, 3, 5, 8, 13, **21**
 
 1. Do we understand all the words used in stating the problem?
 
@@ -241,17 +241,18 @@ Write a function that prints the nth number in the Fibonacci sequence:
 
 - What is our base case?
 - Let's work backward to figure it out
-- 5 is equal to the current value of 3 plus the previous value 2
-- 3 is equal to the current value of 2 plus the previous value of 1
-- 2 is equal to the current value of 1 plus the previous value of 1
+- 2 is equal to the current value of 3 plus the previous value 1
+- 1 is equal to the current value of 2 plus the previous value of 1
+- 1 is equal to the current value of 1 plus the previous value of 0
+- 2 can be base case as well since it returns the value of 1
 - 1 the base case - return the value of 1
-- 0 is the base case - return the value of 1
+- 0 is the base case - return the value of 0
 
 ```js
 const fibonacci = (num) => {
-  if (num <= 1) {
-    return 1;
-  }
+  if(num===0) return 0
+  if (num <= 2) return 1;
+  
 };
 
 console.log(fibonacci(5));
@@ -261,9 +262,9 @@ How do we get to the base case? We'll do it by adding the current number to the 
 
 ```js
 const fibonacci = (num) => {
-  if (num <= 1) {
-    return 1;
-  }
+    if(num===0) return 0
+  if (num <= 2) return 1;
+
   return fibonacci(num - 1) + fibonacci(num - 2);
 };
 
@@ -285,15 +286,15 @@ Let's call `fibonacci()` `f()` for short
 
 Once we have figured out what f(1) and f(0) is, we can solve for (f2)
 
-- `f(2)` is equal to 2
+- `f(2)` is equal to 1
 
 Now we can look at `f(3)`.
 
-- `f(3)` is equal to 2 + 1 = 3
+- `f(3)` is equal to 1 + 1 = 2
 
-Next `f(4)` is the value of `f(3)`, which we know is 3, and `f(2)` which we know is 2, so `f(4)` is equal to 5
+Next `f(4)` is the value of `f(3)`, which we know is 2, and `f(2)` which we know is 1, so `f(4)` is equal to 3
 
-Finally, `f(5)` is `f(4)` + `f(3)` which is 5 + 3 = 8
+Finally, `f(5)` is `f(4)` + `f(3)` which is 3 + 2 = 5
 
 As simple as the code we wrote looks, it takes a lot of steps to solve this problem. This is not an efficient solution.
 
@@ -357,12 +358,12 @@ We could create an array to store the values. Once the value is calculated, we c
 
 ```js
 const fib = (n, memo = []) => {
-  // console.log(n, memo);
-  if (n <= 1) {
-    return 1;
-  } else if (!memo[n]) {
-    memo[n] = fib(n - 1, memo) + fib(n - 2, memo);
-  }
+  if(n in memo) return  memo[n]
+  if(num===0) return 0
+  if (num <= 2) return 1;
+
+  memo[n] = fib(n - 1, memo) + fib(n - 2, memo);
+
   return memo[n];
 };
 

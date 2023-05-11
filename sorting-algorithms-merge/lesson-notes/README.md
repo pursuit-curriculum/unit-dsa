@@ -54,10 +54,10 @@ const sortedArray = [];
 
 By comparing the first values in the array
 
-- if `left[0] > right[0]`
-- remove `[left][0]` from the array and put it into the sorted array
-- if `left[0] < right[0]` OR `left[0]===right[0]`
-- remove `[right][0]` from the array and put it into the sorted array
+- if `left[0] < right[0]`
+- remove `left[0]` from the array and put it into the sorted array
+- if `left[0] > right[0]` OR `left[0]===right[0]`
+- remove `right[0]` from the array and put it into the sorted array
 
 After one round, we would expect
 
@@ -65,7 +65,7 @@ After one round, we would expect
 - `left = [4, 8]`
 - `right = [3,6]`
 
-We can do another round. This time we are comparing `left[0]` - which is now `4` because we removed `1` and `right[0]`'s value of `3
+We can do another round. This time we are comparing `left[0]` - which is now `4` because we removed `1` and `right[0]`'s value of `3`
 
 - `sortedArray = [1,3]`
 - `left = [4, 8]`

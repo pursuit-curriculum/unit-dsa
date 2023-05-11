@@ -96,7 +96,7 @@ Next, complete the two exercises below this.
 
 ## Lab
 
-- [Complete this repository and submit to Canvas](https://github.com/joinpursuit/m6-trees-introduction-lab)
+- [Complete this repository and submit to Canvas](https://github.com/9-1-pursuit/lab-intro-to-trees)
 
 ## More problems
 

@@ -43,7 +43,7 @@ Bubble sort compares two elements that are next to each other,
 Let's code it:
 
 ```js
-const bubbleSort = (arr) {
+const bubbleSort = (arr) => {
  for let (i = 0; i < arr.length; i++) {
  // iterate over the array
  }
@@ -52,7 +52,7 @@ const bubbleSort = (arr) {
 ```
 
 ```js
-const bubbleSort = (arr) {
+const bubbleSort = (arr) => {
  for (let i = 0; i < arr.length; i++) {
  // compare if the first item is larger than the one next to it. If yes, then swap the positions
  if (arr[i] > arr[i + 1]) {
