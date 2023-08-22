@@ -79,22 +79,43 @@ sequence:
       pursuit_path: intro-to-stacks-and-queues
       kind: lesson
       activity: repository
-    - name: Introduction to Trees
-      pursuit_path: intro-to-trees
+    - name: Capstone Workbook
+      activity: canvas_url
+      activity_description: |
+        <p>Go to the slide deck below. One person from each Capstone group should create a copy of the Capstone Workbook. Submit a URL to your group's copied version in this assignment.</p>
+        <br> 
+        <a href='https://docs.google.com/presentation/d/1zaHdrvt3e0FjpjSjWh3bEn2bhzAp6U8vGjNjfeaGbHI/edit#slide=id.g6c1b6be0e1_0_0'>Capstone Workbook</a>
+        <p>Make sure that everyone in your group has Edit access to the Capstone Workbook before you submit.</p>
+      points_possible: 0
+      kind: task # Submission only
+    - name: Group Norms
+      pursuit_path: group-norms
       kind: lesson
-      activity: repository
-    - name: Sorting Algorithms - Bubble Sort
-      pursuit_path: sorting-algorithms-bubble
+      activity: ~
+    - name: Git and GitHub with Teams
+      pursuit_path: git-github-w-teams
+      kind: lesson # Submission only
+      activity: ~
+    - name: Ideation
+      pursuit_path: ideation
       kind: lesson
-      activity: null
-    - name: Sorting Algorithms - Merge Sort
-      pursuit_path: sorting-algorithms-merge
-      kind: lesson
-      activity: repository
-    - name: Introduction to Hash Tables
-      pursuit_path: intro-to-hash-tables
-      kind: lesson
-      activity: null
+      activity: ~
+    # - name: Introduction to Trees
+    #   pursuit_path: intro-to-trees
+    #   kind: lesson
+    #   activity: repository
+    # - name: Sorting Algorithms - Bubble Sort
+    #   pursuit_path: sorting-algorithms-bubble
+    #   kind: lesson
+    #   activity: null
+    # - name: Sorting Algorithms - Merge Sort
+    #   pursuit_path: sorting-algorithms-merge
+    #   kind: lesson
+    #   activity: repository
+    # - name: Introduction to Hash Tables
+    #   pursuit_path: intro-to-hash-tables
+    #   kind: lesson
+    #   activity: null
   Projects and Assessments:
     - name: Code Wars
       pursuit_path: code-wars
