@@ -70,7 +70,7 @@ sequence:
       pursuit_path: intro-to-oop-inheritance
       kind: lesson
       activity: repository
-  Data Structures & Algorithms:
+
     - name: Introduction to Linked Lists
       pursuit_path: intro-to-linked-lists
       kind: lesson
@@ -79,6 +79,7 @@ sequence:
       pursuit_path: intro-to-stacks-and-queues
       kind: lesson
       activity: repository
+  Capstone Preparation:
     - name: Capstone Workbook
       activity: canvas_url
       activity_description: |
