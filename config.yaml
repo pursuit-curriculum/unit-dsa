@@ -12,14 +12,22 @@ sequence:
       pursuit_path: intro-to-data-structures-and-algorithms
       kind: lesson
       activity: canvas_text
-      activity_description: "Watch: <a
-        href='https://www.youtube.com/watch?v=kiFfp-HAu64'>The Secret Rules of
-        Modern Living Algorithms </a> <h5>And answer the following questions on
-        Canvas:</h5> <ol> <li> Describe the algorithm to win the chocolate, and
-        not the chili</li> <li> Name 2 types of sorting algorithms discussed in
-        the video</li> <li> Name the algorithm used to help find matches for
-        people who needed a kidney?</li> <li> What animal deals with the
-        Traveling Salesman problem in its daily life?</li> <ol>"
+      activity_description: |
+        <a href='https://www.youtube.com/watch?v=kiFfp-HAu64'>
+            Watch: The Secret Rules of Modern Living Algorithms 
+         </a> 
+         <h5>And answer the following questions on
+         Canvas:</h5>
+        <ol> 
+          <li> Describe the algorithm to win the chocolate, and
+            not the chili</li>
+          <li> Name 2 types of sorting algorithms discussed in
+            the video</li>
+          <li> Name the algorithm used to help find matches for
+            people who needed a kidney?</li>
+          <li> What animal deals with the
+            Traveling Salesman problem in its daily life?</li>
+        <ol>
     - name: Control Flow Review
       pursuit_path: control-flow
       kind: lesson
@@ -48,16 +56,25 @@ sequence:
       pursuit_path: intro-to-big-o
       kind: lesson
       activity: canvas_text
-      activity_description:
+      activity_description: |
         <p>What is the time complexity for the solutions provided
-        to the following problems? Take a look at <a
-        href='https://replit.com/@samshapland/find-time-complexity#index.js'>this
-        replit </a> and determine the time complexity of each solution provided.
+          to the following problems? Take a look at 
+          <a
+          href='https://replit.com/@samshapland/find-time-complexity#index.js'>this
+          replit </a>
+        and determine the time complexity of each solution provided.
         Click the button that says 'Start Assignment' and fill out the text box
-        below with your answers. <ul> <li>Disemvowel trolls (without Regex)</li>
-        <li> 2D Array Find Greatest Sum</li> <li>Well of Ideas (Easy)</li> <li>
-        Find Sum up to n Version 1</li> <li>Find Sum up to n Version 2</li>
-        <li>The Barksdale Code</li> </ul> </p>
+        below with your answers. </p>
+        <p>
+          <ul> 
+            <li>Disemvowel trolls (without Regex)</li>
+            <li> 2D Array Find Greatest Sum</li>
+            <li>Well of Ideas (Easy)</li>
+            <li> Find Sum up to n Version 1</li>
+            <li>Find Sum up to n Version 2</li>
+            <li>The Barksdale Code</li> 
+          </ul> 
+        </p>
     - name: Introduction to Recursion
       pursuit_path: intro-to-recursion
       kind: lesson
@@ -70,7 +87,6 @@ sequence:
       pursuit_path: intro-to-oop-inheritance
       kind: lesson
       activity: repository
-
     - name: Introduction to Linked Lists
       pursuit_path: intro-to-linked-lists
       kind: lesson
@@ -101,22 +117,6 @@ sequence:
       pursuit_path: ideation
       kind: lesson
       activity: ~
-    # - name: Introduction to Trees
-    #   pursuit_path: intro-to-trees
-    #   kind: lesson
-    #   activity: repository
-    # - name: Sorting Algorithms - Bubble Sort
-    #   pursuit_path: sorting-algorithms-bubble
-    #   kind: lesson
-    #   activity: null
-    # - name: Sorting Algorithms - Merge Sort
-    #   pursuit_path: sorting-algorithms-merge
-    #   kind: lesson
-    #   activity: repository
-    # - name: Introduction to Hash Tables
-    #   pursuit_path: intro-to-hash-tables
-    #   kind: lesson
-    #   activity: null
   Projects and Assessments:
     - name: Code Wars
       pursuit_path: code-wars
