@@ -28,23 +28,22 @@ To pass this unit, you will need to gain a minimum number of points on code wars
 | :-: | :-----------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------: |
 |  1  |                           N/A                           | [Intro to DSA/Problem Solving](./intro-to-data-structures-and-algorithms) [Mock Interview Intro and Prep](./mock-interviews) |
 |  2  |             [Print Primes](./control-flow)              |                                         [Control Flow](./control-flow/lesson-notes)                                          |
-|  3  |            [Find the Median](./math-basics)             |                                  [Math For Software Developers](./math-basics/lesson-notes)                                  |
+|  3  |           [Find the Median](./math-for-devs)            |                                 [Math For Software Developers](./math-for-devs/lesson-notes)                                 |
 |  4  |             [Disemvowel Trolls](./strings)              |                                              [Strings](./strings/lesson-notes)                                               |
 |  5  |              [Err!0rs](./dealing-w-errors)              |                                          [Errors](./dealing-w-errors/lesson-notes)                                           |
 |  6  | [My Own Find Index Of Function](./arrays-and-callbacks) |                                  [Arrays & Callbacks](./arrays-and-callbacks/lesson-notes)                                   |
-|  7  |          [Count Words](./working-with-objects)          |                                        [Working with Objects](./objects/lesson-notes)                                        |
-|  8  |               [Guess My Number](./big-o)                |                                                [Big O](./big-o/lesson-notes)                                                 |
-|  9  |         [Fibonacci](./fibonacci-and-recursion)          |                                 [Intro to Recursion](./fibonacci-and-recursion/lesson-notes)                                 |
-| 10  |      [Model a Vending Machine, Cards](./oop-intro)      |                                               [OOP](./oop-intro/lesson-notes)                                                |
-| 11  |             [Cards Cont.](./oop-continued)              |                                        [OOP Continued](./oop-continued/lesson-notes)                                         |
-| 12  |                  [OOP Lab](./oop-lab)                   |                             [OOP Continued](https://github.com/joinpursuit/oop-fruits-pets-lab)                              |
-| 13  |             [Linked Lists](./linked-lists)              |                                         [Linked Lists](./linked-lists/lesson-notes)                                          |
-| 14  |         [Stacks & Queues](./stacks-and-queues)          |                                     [Stacks & Queues](./stacks-and-queues/lesson-notes)                                      |
-| 15  |                    [Trees](./trees)                     |                                             [Binary Trees](./trees/lesson-notes)                                             |
-| 16  |           [Bubble Sort](./sorting-algorithms)           |                                   [Sorting Algorithms](./sorting-algorithms/lesson-notes)                                    |
-| 17  |          [Sort Part 2](./sorting-algorithms-2)          |                                 [Sorting Algorithms 2](./sorting-algorithms-2/lesson-notes)                                  |
-| 18  |             [Unique Array](./unique-array)              |                                          [Hash Tables](./unique-array/lesson-notes)                                          |
-| 19  |         [Bonus/Advanced](./bonus-and-advanced)          |                                                             N/A                                                              |
+|  7  |                [Count Words](./objects)                 |                                        [Working with Objects](./objects/lesson-notes)                                        |
+|  8  |           [Guess My Number](./intro-to-big-o)           |                                            [Big O](./intro-to-big-o/lesson-notes)                                            |
+|  9  |            [Fibonacci](./intro-to-recursion)            |                                   [Intro to Recursion](./intro-to-recursion/lesson-notes)                                    |
+| 10  |    [Model a Vending Machine, Cards](./intro-to-oop)     |                                              [OOP](./intro-to-oop/lesson-notes)                                              |
+| 11  |        [Cards Cont.](./intro-to-oop-inheritance)        |                                   [OOP Continued](./intro-to-oop-inheritance/lesson-notes)                                   |
+| 12  |                  [OOP Lab](./oop-lab)                   |                                                     OOP Lab: Tamagotchi                                                      |
+| 13  |         [Linked Lists](./intro-to-linked-lists)         |                                     [Linked Lists](./intro-to-linked-lists/lesson-notes)                                     |
+| 14  |     [Stacks & Queues](./intro-to-stacks-and-queues)     |                                 [Stacks & Queues](./intro-to-stacks-and-queues/lesson-notes)                                 |
+| 15  |                [Trees](./intro-to-trees)                |                                        [Binary Trees](./intro-to-trees/lesson-notes)                                         |
+| 16  |       [Bubble Sort](./sorting-algorithms-bubble)        |                                [Sorting Algorithms](./sorting-algorithms-bubble/lesson-notes)                                |
+| 17  |        [Sort Part 2](./sorting-algorithms-merge)        |                               [Sorting Algorithms 2](./sorting-algorithms-merge/lesson-notes)                                |
+| 18  |         [Unique Array](./intro-to-hash-tables)          |                                      [Hash Tables](./intro-to-hash-tables/lesson-notes)                                      |
 
 ## Individual Project: Code Wars
 
